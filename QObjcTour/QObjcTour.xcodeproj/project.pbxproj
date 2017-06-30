@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063A95AD1F06924A00017CDE /* PThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AB1F06924A00017CDE /* PThread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		063A95B01F069DBF00017CDE /* QOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AF1F069DBF00017CDE /* QOperation.m */; };
+		063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B21F06A63000017CDE /* RTAPIBaseManager.m */; };
+		063A95B61F06A97400017CDE /* EmbedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B51F06A97400017CDE /* EmbedController.swift */; };
+		064842201F05718B004FD24A /* QBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0648421F1F05718B004FD24A /* QBlock.m */; };
+		064842231F0637B0004FD24A /* PersonARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 064842221F0637B0004FD24A /* PersonARC.m */; };
 		06EDB4E31F04EDCC00A16527 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E21F04EDCC00A16527 /* main.m */; };
 		06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E51F04EDCC00A16527 /* AppDelegate.m */; };
 		06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E81F04EDCC00A16527 /* ViewController.m */; };
@@ -36,6 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063A95AB1F06924A00017CDE /* PThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PThread.c; sourceTree = "<group>"; };
+		063A95AC1F06924A00017CDE /* PThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PThread.h; sourceTree = "<group>"; };
+		063A95AE1F069DBF00017CDE /* QOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QOperation.h; sourceTree = "<group>"; };
+		063A95AF1F069DBF00017CDE /* QOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QOperation.m; sourceTree = "<group>"; };
+		063A95B11F06A63000017CDE /* RTAPIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAPIBaseManager.h; sourceTree = "<group>"; };
+		063A95B21F06A63000017CDE /* RTAPIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAPIBaseManager.m; sourceTree = "<group>"; };
+		063A95B41F06A97400017CDE /* QObjcTour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QObjcTour-Bridging-Header.h"; sourceTree = "<group>"; };
+		063A95B51F06A97400017CDE /* EmbedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedController.swift; sourceTree = "<group>"; };
+		0648421E1F05718B004FD24A /* QBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBlock.h; sourceTree = "<group>"; };
+		0648421F1F05718B004FD24A /* QBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBlock.m; sourceTree = "<group>"; };
+		064842211F0637B0004FD24A /* PersonARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonARC.h; sourceTree = "<group>"; };
+		064842221F0637B0004FD24A /* PersonARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonARC.m; sourceTree = "<group>"; };
 		06EDB4DE1F04EDCC00A16527 /* QObjcTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QObjcTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB4E21F04EDCC00A16527 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06EDB4E41F04EDCC00A16527 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,12 +125,24 @@
 				06EDB4E51F04EDCC00A16527 /* AppDelegate.m */,
 				06EDB4E71F04EDCC00A16527 /* ViewController.h */,
 				06EDB4E81F04EDCC00A16527 /* ViewController.m */,
+				0648421E1F05718B004FD24A /* QBlock.h */,
+				0648421F1F05718B004FD24A /* QBlock.m */,
+				064842211F0637B0004FD24A /* PersonARC.h */,
+				064842221F0637B0004FD24A /* PersonARC.m */,
+				063A95AB1F06924A00017CDE /* PThread.c */,
+				063A95AC1F06924A00017CDE /* PThread.h */,
+				063A95AE1F069DBF00017CDE /* QOperation.h */,
+				063A95AF1F069DBF00017CDE /* QOperation.m */,
+				063A95B11F06A63000017CDE /* RTAPIBaseManager.h */,
+				063A95B51F06A97400017CDE /* EmbedController.swift */,
+				063A95B21F06A63000017CDE /* RTAPIBaseManager.m */,
 				06EDB4EA1F04EDCC00A16527 /* Main.storyboard */,
 				06EDB4F01F04EDCC00A16527 /* Assets.xcassets */,
 				06EDB4F21F04EDCC00A16527 /* LaunchScreen.storyboard */,
 				06EDB4F51F04EDCC00A16527 /* Info.plist */,
 				06EDB4ED1F04EDCC00A16527 /* QObjcTour.xcdatamodeld */,
 				06EDB4E11F04EDCC00A16527 /* Supporting Files */,
+				063A95B41F06A97400017CDE /* QObjcTour-Bridging-Header.h */,
 			);
 			path = QObjcTour;
 			sourceTree = "<group>";
@@ -210,6 +240,7 @@
 				TargetAttributes = {
 					06EDB4DD1F04EDCC00A16527 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					06EDB4F91F04EDCC00A16527 = {
@@ -277,9 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */,
+				063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */,
+				063A95B01F069DBF00017CDE /* QOperation.m in Sources */,
 				06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */,
 				06EDB4E31F04EDCC00A16527 /* main.m in Sources */,
+				063A95B61F06A97400017CDE /* EmbedController.swift in Sources */,
+				063A95AD1F06924A00017CDE /* PThread.c in Sources */,
+				064842201F05718B004FD24A /* QBlock.m in Sources */,
 				06EDB4EF1F04EDCC00A16527 /* QObjcTour.xcdatamodeld in Sources */,
+				064842231F0637B0004FD24A /* PersonARC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +465,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QObjcTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QObjcTour/QObjcTour-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -439,16 +480,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QObjcTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QObjcTour/QObjcTour-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		06EDB5121F04EDCC00A16527 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QObjcTourTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -461,6 +506,7 @@
 		06EDB5131F04EDCC00A16527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QObjcTourTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -473,6 +519,7 @@
 		06EDB5151F04EDCC00A16527 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QObjcTourUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTourUITests;
@@ -484,6 +531,7 @@
 		06EDB5161F04EDCC00A16527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QObjcTourUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTourUITests;
@@ -511,6 +559,7 @@
 				06EDB5101F04EDCC00A16527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06EDB5111F04EDCC00A16527 /* Build configuration list for PBXNativeTarget "QObjcTourTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +568,7 @@
 				06EDB5131F04EDCC00A16527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06EDB5141F04EDCC00A16527 /* Build configuration list for PBXNativeTarget "QObjcTourUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +577,7 @@
 				06EDB5161F04EDCC00A16527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
