@@ -15,7 +15,7 @@
 #import "ViewController.h"
 #import "QBlock.h"
 #import "PThread.h"
-
+#import "QObjcTour-Bridging-Header.h"
 
 @interface ViewController (){
     UIImageView *_imageView;
@@ -27,7 +27,8 @@
 
 @implementation ViewController
 
-#pragma lifeCycle
+#pragma -
+#pragma - lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -106,6 +107,28 @@
      waitUntilDone:是否线程任务完成执行
      */
     [self performSelectorOnMainThread:@selector(updateImage:) withObject:data waitUntilDone:YES];
+}
+
+- (void)userDefaultStorage {
+    
+    //自定义类型
+    
+    
+    
+    Person *per = [[Person alloc]init];
+    per.name = @"zhangsan";
+    per.age = 42;
+    
+    //转化为 data
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:per];
+    //存入
+    [[NSUserDefaults standardUserDefaults]setObject:@{@"zhangsan":data} forKey:@"person"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    //取出打印
+    Person *a = [NSKeyedUnarchiver unarchiveObjectWithData:[[[NSUserDefaults standardUserDefaults] objectForKey:@"person"] valueForKey:@"zhangsan"]];
+    NSLog(@"%@,%ld",a.name,a.age);
+    
+    
 }
 
 #pragma getters and setters

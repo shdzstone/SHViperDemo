@@ -13,6 +13,10 @@
 		063A95B61F06A97400017CDE /* EmbedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B51F06A97400017CDE /* EmbedController.swift */; };
 		064842201F05718B004FD24A /* QBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0648421F1F05718B004FD24A /* QBlock.m */; };
 		064842231F0637B0004FD24A /* PersonARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 064842221F0637B0004FD24A /* PersonARC.m */; };
+		06B320751F06DEE000FAA7DB /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B320741F06DEE000FAA7DB /* UIViewController+Tracking.m */; };
+		06B3207B1F079FC900FAA7DB /* NSObject+Swizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */; };
+		06B3207F1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */; };
+		06B320801F07AB3400FAA7DB /* QUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */; };
 		06EDB4E31F04EDCC00A16527 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E21F04EDCC00A16527 /* main.m */; };
 		06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E51F04EDCC00A16527 /* AppDelegate.m */; };
 		06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E81F04EDCC00A16527 /* ViewController.m */; };
@@ -54,6 +58,13 @@
 		0648421F1F05718B004FD24A /* QBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBlock.m; sourceTree = "<group>"; };
 		064842211F0637B0004FD24A /* PersonARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonARC.h; sourceTree = "<group>"; };
 		064842221F0637B0004FD24A /* PersonARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonARC.m; sourceTree = "<group>"; };
+		06B320731F06DEE000FAA7DB /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		06B320741F06DEE000FAA7DB /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		06B320791F079FC900FAA7DB /* NSObject+Swizzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzing.h"; sourceTree = "<group>"; };
+		06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzing.m"; sourceTree = "<group>"; };
+		06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BoundsCheckking.h"; sourceTree = "<group>"; };
+		06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BoundsCheckking.m"; sourceTree = "<group>"; };
+		06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QUserDefault.swift; sourceTree = "<group>"; };
 		06EDB4DE1F04EDCC00A16527 /* QObjcTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QObjcTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB4E21F04EDCC00A16527 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06EDB4E41F04EDCC00A16527 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +132,13 @@
 		06EDB4E01F04EDCC00A16527 /* QObjcTour */ = {
 			isa = PBXGroup;
 			children = (
+				06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */,
+				06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */,
+				06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */,
+				06B320791F079FC900FAA7DB /* NSObject+Swizzing.h */,
+				06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */,
+				06B320731F06DEE000FAA7DB /* UIViewController+Tracking.h */,
+				06B320741F06DEE000FAA7DB /* UIViewController+Tracking.m */,
 				06EDB4E41F04EDCC00A16527 /* AppDelegate.h */,
 				06EDB4E51F04EDCC00A16527 /* AppDelegate.m */,
 				06EDB4E71F04EDCC00A16527 /* ViewController.h */,
@@ -134,8 +152,8 @@
 				063A95AE1F069DBF00017CDE /* QOperation.h */,
 				063A95AF1F069DBF00017CDE /* QOperation.m */,
 				063A95B11F06A63000017CDE /* RTAPIBaseManager.h */,
-				063A95B51F06A97400017CDE /* EmbedController.swift */,
 				063A95B21F06A63000017CDE /* RTAPIBaseManager.m */,
+				063A95B51F06A97400017CDE /* EmbedController.swift */,
 				06EDB4EA1F04EDCC00A16527 /* Main.storyboard */,
 				06EDB4F01F04EDCC00A16527 /* Assets.xcassets */,
 				06EDB4F21F04EDCC00A16527 /* LaunchScreen.storyboard */,
@@ -309,9 +327,13 @@
 			files = (
 				06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */,
 				063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */,
+				06B3207B1F079FC900FAA7DB /* NSObject+Swizzing.m in Sources */,
 				063A95B01F069DBF00017CDE /* QOperation.m in Sources */,
 				06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */,
+				06B320751F06DEE000FAA7DB /* UIViewController+Tracking.m in Sources */,
+				06B320801F07AB3400FAA7DB /* QUserDefault.swift in Sources */,
 				06EDB4E31F04EDCC00A16527 /* main.m in Sources */,
+				06B3207F1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m in Sources */,
 				063A95B61F06A97400017CDE /* EmbedController.swift in Sources */,
 				063A95AD1F06924A00017CDE /* PThread.c in Sources */,
 				064842201F05718B004FD24A /* QBlock.m in Sources */,

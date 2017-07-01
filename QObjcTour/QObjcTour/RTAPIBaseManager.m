@@ -7,7 +7,3 @@
 //
 
 #import "RTAPIBaseManager.h"
-
-@implementation RTAPIBaseManager
-
-@end
