@@ -27,8 +27,8 @@
         }
         @catch (NSException *exception) {
             // 在崩溃后会打印崩溃信息，方便我们调试。
-            NSLog(@"---------- %s Crash Because Method %s  ----------\n", class_getName(self.class), __func__);
-            NSLog(@"%@", [exception callStackSymbols]);
+            MPLog(@"---------- %s Crash Because Method %s  ----------\n", class_getName(self.class), __func__);
+            MPLog(@"%@", [exception callStackSymbols]);
             return nil;
         }
         @finally {}

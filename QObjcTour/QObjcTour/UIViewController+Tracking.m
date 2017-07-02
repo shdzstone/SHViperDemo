@@ -25,23 +25,41 @@
     
     dispatch_once(&onceToken, ^{
         
+        
+        
         Class class = [self class];
         // When swizzling a class method, use the following:
         // Class class = object_getClass((id)self);
         
-        // 获取原始method在
+        // 获取SEL
         SEL originalSelector = @selector(viewWillAppear:);
-        SEL swizzledSelector = @selector(xxx_viewWillAppear:);
+        SEL swizzledSelector = @selector(swizzledViewWillAppear:);
         
         // 通过class_getInstanceMethod()函数从当前对象中的method list获取method结构体，如果是类方法就使用class_getClassMethod()函数获取。
         Method originalMethod = class_getInstanceMethod(class, originalSelector);
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
         
+        /*
+         *  注意：class_addMethod，若子类没有某个方法的实现代码，则可以添加成功，返回YES；
+         *  但若子类已经存在实现代码，添加失败，返回NO；
+         *  若要覆盖某个已存在的实现，需要调用：method_setImplementation方法。
+         *  注意第四个参数的格式，本例中types参数为"i@:@“，type表明了该函数从左到右返回值及参数的类型，@表示object对象。:表示selector对象,
+         *   按顺序分别表示：
+         *    v      ： v表示返回值为void
+         *    @      ：参数id(self)
+         *    :      ：SEL(_cmd)对象
+         *    @      ：id(str)
+         */
         BOOL didAddMethod = class_addMethod(class,
                                             originalSelector,
                                             method_getImplementation(swizzledMethod),
                                             method_getTypeEncoding(swizzledMethod));
         
+        
+        /*
+         *判断，若添加成功。
+         *
+         */
         if (didAddMethod) {
             class_replaceMethod(class,
                                 swizzledSelector,
@@ -51,40 +69,18 @@
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     });
-    
-
-    /*
-        Method fromMethod = class_getInstanceMethod([self class], @selector(viewDidLoad));
-        Method toMethod = class_getInstanceMethod([self class], @selector(swizzlingViewDidLoad));
-         //
-         //  我们在这里使用class_addMethod()函数对Method Swizzling做了一层验证，如果self没有实现被交换的方法，会导致失败。
-         //  而且self没有交换的方法实现，但是父类有这个方法，这样就会调用父类的方法，结果就不是我们想要的结果了。
-         //  所以我们在这里通过class_addMethod()的验证，如果self实现了这个方法，class_addMethod()函数将会返回NO，我们就可以对其进行交换了。
-         //
-        if (!class_addMethod([self class], @selector(viewDidLoad), method_getImplementation(toMethod), method_getTypeEncoding(toMethod))) {
-            method_exchangeImplementations(fromMethod, toMethod);
-        }
-    */
 }
 
 #pragma mark - Method Swizzling
 
-- (void)xxx_viewWillAppear:(BOOL)animated {
-    [self xxx_viewWillAppear:animated];
-    NSLog(@"viewWillAppear: %@", self);
-}
-
-
-
-
-// 我们自己实现的方法，也就是和self的viewDidLoad方法进行交换的方法。
-- (void)swizzlingViewDidLoad {
+- (void)swizzledViewWillAppear:(BOOL)animated {
     NSString *str = [NSString stringWithFormat:@"%@", self.class];
-    // 我们在这里加一个判断，将系统的UIViewController的对象剔除掉
+
+    // 判断，将系统的UIViewController的对象剔除掉
     if(![str containsString:@"UI"]){
-        NSLog(@"统计打点 : %@", self.class);
+        MPLog(@"统计打点 : %@", self.class);
     }
-    [self swizzlingViewDidLoad];
+    [self swizzledViewWillAppear:animated];
 }
 
 

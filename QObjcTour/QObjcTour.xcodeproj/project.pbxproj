@@ -17,6 +17,8 @@
 		06B3207B1F079FC900FAA7DB /* NSObject+Swizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */; };
 		06B3207F1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */; };
 		06B320801F07AB3400FAA7DB /* QUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */; };
+		06B320831F07AD1000FAA7DB /* MemoryManagementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B320821F07AD1000FAA7DB /* MemoryManagementTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06B320861F0805AA00FAA7DB /* DynamicResolutionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B320851F0805AA00FAA7DB /* DynamicResolutionTest.m */; };
 		06EDB4E31F04EDCC00A16527 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E21F04EDCC00A16527 /* main.m */; };
 		06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E51F04EDCC00A16527 /* AppDelegate.m */; };
 		06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E81F04EDCC00A16527 /* ViewController.m */; };
@@ -26,6 +28,7 @@
 		06EDB4F41F04EDCC00A16527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EDB4F21F04EDCC00A16527 /* LaunchScreen.storyboard */; };
 		06EDB4FF1F04EDCC00A16527 /* QObjcTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4FE1F04EDCC00A16527 /* QObjcTourTests.m */; };
 		06EDB50A1F04EDCC00A16527 /* QObjcTourUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB5091F04EDCC00A16527 /* QObjcTourUITests.m */; };
+		06FF5EE51F08EB880079D1D3 /* ForwardedTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FF5EE41F08EB880079D1D3 /* ForwardedTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,10 @@
 		06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BoundsCheckking.h"; sourceTree = "<group>"; };
 		06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BoundsCheckking.m"; sourceTree = "<group>"; };
 		06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QUserDefault.swift; sourceTree = "<group>"; };
+		06B320811F07AD1000FAA7DB /* MemoryManagementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManagementTest.h; sourceTree = "<group>"; };
+		06B320821F07AD1000FAA7DB /* MemoryManagementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementTest.m; sourceTree = "<group>"; };
+		06B320841F0805AA00FAA7DB /* DynamicResolutionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicResolutionTest.h; sourceTree = "<group>"; };
+		06B320851F0805AA00FAA7DB /* DynamicResolutionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicResolutionTest.m; sourceTree = "<group>"; };
 		06EDB4DE1F04EDCC00A16527 /* QObjcTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QObjcTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB4E21F04EDCC00A16527 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06EDB4E41F04EDCC00A16527 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +89,9 @@
 		06EDB5051F04EDCC00A16527 /* QObjcTourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QObjcTourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB5091F04EDCC00A16527 /* QObjcTourUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QObjcTourUITests.m; sourceTree = "<group>"; };
 		06EDB50B1F04EDCC00A16527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FF5EE21F08B5E80079D1D3 /* QObjcTour-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QObjcTour-Prefix.pch"; sourceTree = "<group>"; };
+		06FF5EE31F08EB880079D1D3 /* ForwardedTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardedTarget.h; sourceTree = "<group>"; };
+		06FF5EE41F08EB880079D1D3 /* ForwardedTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardedTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +142,20 @@
 		06EDB4E01F04EDCC00A16527 /* QObjcTour */ = {
 			isa = PBXGroup;
 			children = (
+				06FF5EE21F08B5E80079D1D3 /* QObjcTour-Prefix.pch */,
 				06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */,
-				06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */,
 				06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */,
-				06B320791F079FC900FAA7DB /* NSObject+Swizzing.h */,
-				06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */,
+				06B320811F07AD1000FAA7DB /* MemoryManagementTest.h */,
+				06B320821F07AD1000FAA7DB /* MemoryManagementTest.m */,
 				06B320731F06DEE000FAA7DB /* UIViewController+Tracking.h */,
 				06B320741F06DEE000FAA7DB /* UIViewController+Tracking.m */,
+				06B320841F0805AA00FAA7DB /* DynamicResolutionTest.h */,
+				06B320851F0805AA00FAA7DB /* DynamicResolutionTest.m */,
+				06FF5EE31F08EB880079D1D3 /* ForwardedTarget.h */,
+				06FF5EE41F08EB880079D1D3 /* ForwardedTarget.m */,
+				06B320791F079FC900FAA7DB /* NSObject+Swizzing.h */,
+				06B3207A1F079FC900FAA7DB /* NSObject+Swizzing.m */,
+				06B3207D1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m */,
 				06EDB4E41F04EDCC00A16527 /* AppDelegate.h */,
 				06EDB4E51F04EDCC00A16527 /* AppDelegate.m */,
 				06EDB4E71F04EDCC00A16527 /* ViewController.h */,
@@ -147,8 +164,8 @@
 				0648421F1F05718B004FD24A /* QBlock.m */,
 				064842211F0637B0004FD24A /* PersonARC.h */,
 				064842221F0637B0004FD24A /* PersonARC.m */,
-				063A95AB1F06924A00017CDE /* PThread.c */,
 				063A95AC1F06924A00017CDE /* PThread.h */,
+				063A95AB1F06924A00017CDE /* PThread.c */,
 				063A95AE1F069DBF00017CDE /* QOperation.h */,
 				063A95AF1F069DBF00017CDE /* QOperation.m */,
 				063A95B11F06A63000017CDE /* RTAPIBaseManager.h */,
@@ -329,12 +346,15 @@
 				063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */,
 				06B3207B1F079FC900FAA7DB /* NSObject+Swizzing.m in Sources */,
 				063A95B01F069DBF00017CDE /* QOperation.m in Sources */,
+				06FF5EE51F08EB880079D1D3 /* ForwardedTarget.m in Sources */,
 				06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */,
 				06B320751F06DEE000FAA7DB /* UIViewController+Tracking.m in Sources */,
+				06B320831F07AD1000FAA7DB /* MemoryManagementTest.m in Sources */,
 				06B320801F07AB3400FAA7DB /* QUserDefault.swift in Sources */,
 				06EDB4E31F04EDCC00A16527 /* main.m in Sources */,
 				06B3207F1F07AB3400FAA7DB /* NSArray+BoundsCheckking.m in Sources */,
 				063A95B61F06A97400017CDE /* EmbedController.swift in Sources */,
+				06B320861F0805AA00FAA7DB /* DynamicResolutionTest.m in Sources */,
 				063A95AD1F06924A00017CDE /* PThread.c in Sources */,
 				064842201F05718B004FD24A /* QBlock.m in Sources */,
 				06EDB4EF1F04EDCC00A16527 /* QObjcTour.xcdatamodeld in Sources */,
@@ -488,6 +508,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QObjcTour/QObjcTour-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = QObjcTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTour;
@@ -503,6 +526,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QObjcTour/QObjcTour-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = QObjcTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.EBuy.QObjcTour;

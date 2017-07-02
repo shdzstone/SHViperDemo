@@ -1,0 +1,31 @@
+//
+//  QObjcTour-Prefix.pch
+//  QObjcTour
+//
+//  Created by cdzdev on 2017/7/2.
+//  Copyright © 2017年 cdz's mac. All rights reserved.
+//
+
+#ifndef QObjcTour_Prefix_pch
+#define QObjcTour_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+
+#ifdef DEBUG
+
+#define MPLog(FORMAT, ...) fprintf(stderr,"%s: %s\n", [[NSString stringWithUTF8String: __FUNCTION__] UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+#else
+#define MPLog(...);
+#endif
+
+
+#endif /* QObjcTour_Prefix_pch */

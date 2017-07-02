@@ -49,9 +49,7 @@
     
     NSString *string1 = @"UTF32.txt";
     NSString *string2 = [NSHomeDirectory() stringByAppendingPathComponent:string1];
-    NSTextStorage *storage = [[NSTextStorage alloc] initWithString:string2];
-    NSString *string3 = [storage string];
-    
+    MPLog(@"%@", string2);
 }
 
 
@@ -79,15 +77,15 @@
  //往string追加文本
  [string appendString:@" world!"];
  //此处string已经改变， 输出为 “hello world!”
- NSLog(@”%@”,string);
+ MPLog(@”%@”,string);
  //输出myString，你会发现此处输出仍然为 “hello” 因为 myString在string改变之前已经copy了一份副本
- NSLog(@”%@”,instance.myString);
+ MPLog(@”%@”,instance.myString);
  
  UIView * view = [[UIView alloc] init];
- NSLog(@”retainCount = %d”,view.retainCount);
+ MPLog(@”retainCount = %d”,view.retainCount);
  //输出view的引用计数， 此时为1
  instance.myView = view; //对myView属性赋值
- NSLog(@”retainCount = %d”,view.retainCount);
+ MPLog(@”retainCount = %d”,view.retainCount);
  //再次输出view的引用计数， 此时为2，因为myView对view进行了一次retain。
  [view release];
  //此处虽然view被release释放掉了，但myView对view进行了一次retain，那么myView保留的UIView的对象指针仍然有效。

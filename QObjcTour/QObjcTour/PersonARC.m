@@ -8,6 +8,8 @@
 
 #import "PersonARC.h"
 
+
+
 @implementation PersonARC
 
 - (void)contrived {
@@ -15,14 +17,14 @@
     [aPerson setFirstName:@"William"];
     [aPerson setLastName:@"Dudney"];
     [aPerson setYearOfBirth:[[NSNumber alloc] initWithInteger:2011]];
-    NSLog(@"aPerson: %@", aPerson);
+    MPLog(@"aPerson: %@", aPerson);
 }
 
 
 - (void)takeLastNameFrom:(PersonARC *)person {
     NSString *oldLastname = [self lastName];
     [self setLastName:[person lastName]];
-    NSLog(@"Lastname changed from %@ to %@", oldLastname, [self lastName]);
+    MPLog(@"Lastname changed from %@ to %@", oldLastname, [self lastName]);
 }
 
 @end
