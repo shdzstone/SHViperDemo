@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		062621871F128E6E00020CC4 /* 网络 in Resources */ = {isa = PBXBuildFile; fileRef = 062621831F128E6E00020CC4 /* 网络 */; };
-		062621881F128E6E00020CC4 /* 消息拦截和重定向 in Resources */ = {isa = PBXBuildFile; fileRef = 062621841F128E6E00020CC4 /* 消息拦截和重定向 */; };
-		062621891F128E6E00020CC4 /* 页面打点统计 in Resources */ = {isa = PBXBuildFile; fileRef = 062621851F128E6E00020CC4 /* 页面打点统计 */; };
-		0626218A1F128E6E00020CC4 /* Method SEL IMP in Resources */ = {isa = PBXBuildFile; fileRef = 062621861F128E6E00020CC4 /* Method SEL IMP */; };
+		062621871F128E6E00020CC4 /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 062621831F128E6E00020CC4 /* Network */; };
+		062621881F128E6E00020CC4 /* MessagingForward in Resources */ = {isa = PBXBuildFile; fileRef = 062621841F128E6E00020CC4 /* MessagingForward */; };
+		062621891F128E6E00020CC4 /* PageTracking in Resources */ = {isa = PBXBuildFile; fileRef = 062621851F128E6E00020CC4 /* PageTracking */; };
+		0626218A1F128E6E00020CC4 /* Method_SEL_IMP in Resources */ = {isa = PBXBuildFile; fileRef = 062621861F128E6E00020CC4 /* Method_SEL_IMP */; };
 		063A95AD1F06924A00017CDE /* PThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AB1F06924A00017CDE /* PThread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		063A95B01F069DBF00017CDE /* QOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AF1F069DBF00017CDE /* QOperation.m */; };
 		063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B21F06A63000017CDE /* RTAPIBaseManager.m */; };
@@ -50,10 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062621831F128E6E00020CC4 /* 网络 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "网络"; sourceTree = "<group>"; };
-		062621841F128E6E00020CC4 /* 消息拦截和重定向 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "消息拦截和重定向"; sourceTree = "<group>"; };
-		062621851F128E6E00020CC4 /* 页面打点统计 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "页面打点统计"; sourceTree = "<group>"; };
-		062621861F128E6E00020CC4 /* Method SEL IMP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Method SEL IMP"; sourceTree = "<group>"; };
+		062621831F128E6E00020CC4 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
+		062621841F128E6E00020CC4 /* MessagingForward */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MessagingForward; sourceTree = "<group>"; };
+		062621851F128E6E00020CC4 /* PageTracking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PageTracking; sourceTree = "<group>"; };
+		062621861F128E6E00020CC4 /* Method_SEL_IMP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Method_SEL_IMP; sourceTree = "<group>"; };
 		063A95AB1F06924A00017CDE /* PThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PThread.c; sourceTree = "<group>"; };
 		063A95AC1F06924A00017CDE /* PThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PThread.h; sourceTree = "<group>"; };
 		063A95AE1F069DBF00017CDE /* QOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QOperation.h; sourceTree = "<group>"; };
@@ -141,10 +141,10 @@
 		06EDB4E01F04EDCC00A16527 /* QObjcTour */ = {
 			isa = PBXGroup;
 			children = (
-				062621831F128E6E00020CC4 /* 网络 */,
-				062621841F128E6E00020CC4 /* 消息拦截和重定向 */,
-				062621851F128E6E00020CC4 /* 页面打点统计 */,
-				062621861F128E6E00020CC4 /* Method SEL IMP */,
+				062621831F128E6E00020CC4 /* Network */,
+				062621841F128E6E00020CC4 /* MessagingForward */,
+				062621851F128E6E00020CC4 /* PageTracking */,
+				062621861F128E6E00020CC4 /* Method_SEL_IMP */,
 				06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */,
 				06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */,
 				063A95B51F06A97400017CDE /* EmbedController.swift */,
@@ -313,12 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EDB4F41F04EDCC00A16527 /* LaunchScreen.storyboard in Resources */,
-				062621881F128E6E00020CC4 /* 消息拦截和重定向 in Resources */,
-				0626218A1F128E6E00020CC4 /* Method SEL IMP in Resources */,
+				062621881F128E6E00020CC4 /* MessagingForward in Resources */,
+				0626218A1F128E6E00020CC4 /* Method_SEL_IMP in Resources */,
 				06EDB4F11F04EDCC00A16527 /* Assets.xcassets in Resources */,
 				06EDB4EC1F04EDCC00A16527 /* Main.storyboard in Resources */,
-				062621871F128E6E00020CC4 /* 网络 in Resources */,
-				062621891F128E6E00020CC4 /* 页面打点统计 in Resources */,
+				062621871F128E6E00020CC4 /* Network in Resources */,
+				062621891F128E6E00020CC4 /* PageTracking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

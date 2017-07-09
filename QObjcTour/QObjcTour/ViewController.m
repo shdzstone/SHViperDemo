@@ -20,6 +20,7 @@
 #import <objc/runtime.h>
 #import "DynamicResolutionTest.h"
 
+
 @interface ViewController ()<UITableViewDelegate>{
     UIImageView *_imageView;
     UIButton *_pressBtn;
