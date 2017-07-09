@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "MemoryManagementTest.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        
-        MemoryManagementTest *test = [[MemoryManagementTest alloc] init];
-        [test memoryManagementTest];
-
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

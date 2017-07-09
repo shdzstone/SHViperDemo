@@ -15,8 +15,8 @@
 #import "ViewController.h"
 #import "QBlock.h"
 #import "PThread.h"
-#import "QObjcTour-Bridging-Header.h"
-#import "MemoryManagementTest.h"
+#import "QObjcTour-Swift.h"
+
 #import <objc/runtime.h>
 #import "DynamicResolutionTest.h"
 
@@ -35,19 +35,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [QBlock inlineBlock];
+//    [QBlock inlineBlock];
 //    LaunchThread();
 //    newPthread();
     
+//    [self userDefaultStorage];
+    
+//    [self coreFoudationaTest];
+    
     [self layoutUI];
-    
-    
-    [DynamicResolutionTest noIMPClassMethodWithArg:@"动态添加类方法，参数为classArg"];
-    DynamicResolutionTest *resolution = [[DynamicResolutionTest alloc]init];
-    [resolution message];
-    [resolution noIMPInstanceMethodWithArg:@"动态添加实例方法,参数为instanceArg"];
-    [resolution forwardedInstanceMethodWithArg:@"需要重定向的实例方法，参数为forwarded instance Agr"];
-    
+
+    [self.view addSubview:_imageView];
+    [self.view addSubview:_pressBtn];
 }
 
 
@@ -55,37 +54,8 @@
     [super viewWillAppear:animated];
     _pressBtn.frame = CGRectMake(0, 0, 100, 20);
     _pressBtn.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+    _imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
-    unsigned int count=1;
-    //获取属性列表
-    objc_property_t *propertyList = class_copyPropertyList([self class], &count);
-    for (unsigned int i=0; i<count; i++) {
-        const char *propertyName = property_getName(propertyList[i]);
-        MPLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
-    }
-    
-    //获取方法列表
-    Method *methodList = class_copyMethodList([self class], &count);
-    for (unsigned int i=0; i<count; i++) {
-        Method method = methodList[i];
-        MPLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
-    }
-    
-    //获取成员变量列表
-    Ivar *ivarList = class_copyIvarList([self class], &count);
-    for (unsigned int i=0; i<count; i++) {
-        Ivar myIvar = ivarList[i];
-        const char *ivarName = ivar_getName(myIvar);
-        MPLog(@"Ivar---->%@", [NSString stringWithUTF8String:ivarName]);
-    }
-    
-    //获取协议列表
-    __unsafe_unretained Protocol **protocolList = class_copyProtocolList([self class], &count);
-    for (unsigned int i=0; i<count; i++) {
-        Protocol *myProtocal = protocolList[i];
-        const char *protocolName = protocol_getName(myProtocal);
-        MPLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,17 +81,27 @@
 
 #pragma mark- private methods
 
+- (void)coreFoudationaTest {
+    void *p = 0;
+    {
+        id obj = [[NSObject alloc] init];
+        //__bridge_retained表示p持有obj的对象的强引用；
+        p = (__bridge_retained void *)obj;
+        obj = nil;
+        //        p = (__bridge void *)obj;
+
+    }
+    MPLog(@"class=%@", [(__bridge id)p class]);
+    
+}
+
 -(void)layoutUI{
     _imageView =[[UIImageView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     _imageView.contentMode=UIViewContentModeScaleAspectFit;
-    [self.view addSubview:_imageView];
     
-    UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame=CGRectMake(50, 500, 220, 25);
-    [button setTitle:@"加载图片" forState:UIControlStateNormal];
-    //添加方法
-    [button addTarget:self action:@selector(loadImageWithMultiThread) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    _pressBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_pressBtn setTitle:@"加载图片" forState:UIControlStateNormal];
+    [_pressBtn addTarget:self action:@selector(loadImageWithMultiThread) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -133,7 +113,7 @@
 -(NSData *)requestData{
     //对于多线程操作建议把线程操作放到@autoreleasepool中
     @autoreleasepool {
-        NSURL *url=[NSURL URLWithString:@"http://images.apple.com/iphone-6/overview/images/biggest_right_large.png"];
+        NSURL *url=[NSURL URLWithString:@"http://img.114mall.com/group1/M00/0E/9D/wKhSIVUvcz6AAjNpAAcWVBBtiVc35..jpg"];
         NSData *data=[NSData dataWithContentsOfURL:url];
         return data;
     }
@@ -154,9 +134,6 @@
 - (void)userDefaultStorage {
     
     //自定义类型
-    
-    
-    /*
     Person *per = [[Person alloc]init];
     per.name = @"zhangsan";
     per.age = 42;
@@ -168,8 +145,9 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
     //取出打印
     Person *a = [NSKeyedUnarchiver unarchiveObjectWithData:[[[NSUserDefaults standardUserDefaults] objectForKey:@"person"] valueForKey:@"zhangsan"]];
+    
     MPLog(@"%@,%ld",a.name,a.age);
-    */
+    
     
 }
 
@@ -222,6 +200,43 @@
 // 调用
 //[self vaMethod:someObj,button,@"ss",nil];
 
+
+- (void)logMethodsAndProperties {
+    unsigned int count=1;
+    //获取属性列表
+    objc_property_t *propertyList = class_copyPropertyList([self class], &count);
+    for (unsigned int i=0; i<count; i++) {
+        const char *propertyName = property_getName(propertyList[i]);
+        const char *propertyAttribute = property_getAttributes(propertyList[i]);
+        MPLog(@"property---->%@   %@", [NSString stringWithUTF8String:propertyName],[NSString stringWithUTF8String:propertyAttribute]);
+    }
+    
+    //获取方法列表
+    Method *methodList = class_copyMethodList([self class], &count);
+    for (unsigned int i=0; i<count; i++) {
+        Method method = methodList[i];
+        MPLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
+    }
+    
+    //获取成员变量列表
+    Ivar *ivarList = class_copyIvarList([self class], &count);
+    for (unsigned int i=0; i<count; i++) {
+        Ivar myIvar = ivarList[i];
+        const char *ivarName = ivar_getName(myIvar);
+        const char *ivarAttribute = ivar_getTypeEncoding(ivarList[i]);
+
+        
+        MPLog(@"Ivar---->%@  %@", [NSString stringWithUTF8String:ivarName],[NSString stringWithUTF8String:ivarAttribute]);
+    }
+    
+    //获取协议列表
+    __unsafe_unretained Protocol **protocolList = class_copyProtocolList([self class], &count);
+    for (unsigned int i=0; i<count; i++) {
+        Protocol *myProtocal = protocolList[i];
+        const char *protocolName = protocol_getName(myProtocal);
+        MPLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
+    }
+}
 #pragma mark- getters and setters
 
 

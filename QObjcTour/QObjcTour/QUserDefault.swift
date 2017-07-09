@@ -13,6 +13,13 @@ public class Person: NSObject ,NSCoding{
     public var name : String
     public var age = 0
     
+    override public init() {
+        name = "person"
+        age = 0
+        super.init();
+        
+    }
+
     
     required public init?(coder aCoder: NSCoder) {
         self.name = String(describing: aCoder.decodeObject(forKey: "name"))
