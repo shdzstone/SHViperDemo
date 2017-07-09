@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		062621871F128E6E00020CC4 /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 062621831F128E6E00020CC4 /* Network */; };
-		062621881F128E6E00020CC4 /* MessagingForward in Resources */ = {isa = PBXBuildFile; fileRef = 062621841F128E6E00020CC4 /* MessagingForward */; };
 		062621891F128E6E00020CC4 /* PageTracking in Resources */ = {isa = PBXBuildFile; fileRef = 062621851F128E6E00020CC4 /* PageTracking */; };
 		0626218A1F128E6E00020CC4 /* Method_SEL_IMP in Resources */ = {isa = PBXBuildFile; fileRef = 062621861F128E6E00020CC4 /* Method_SEL_IMP */; };
+		0626218D1F12910E00020CC4 /* MessagingForward in Resources */ = {isa = PBXBuildFile; fileRef = 0626218C1F12910E00020CC4 /* MessagingForward */; };
 		063A95AD1F06924A00017CDE /* PThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AB1F06924A00017CDE /* PThread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		063A95B01F069DBF00017CDE /* QOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AF1F069DBF00017CDE /* QOperation.m */; };
 		063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B21F06A63000017CDE /* RTAPIBaseManager.m */; };
@@ -51,9 +51,9 @@
 
 /* Begin PBXFileReference section */
 		062621831F128E6E00020CC4 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
-		062621841F128E6E00020CC4 /* MessagingForward */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MessagingForward; sourceTree = "<group>"; };
 		062621851F128E6E00020CC4 /* PageTracking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PageTracking; sourceTree = "<group>"; };
 		062621861F128E6E00020CC4 /* Method_SEL_IMP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Method_SEL_IMP; sourceTree = "<group>"; };
+		0626218C1F12910E00020CC4 /* MessagingForward */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MessagingForward; sourceTree = "<group>"; };
 		063A95AB1F06924A00017CDE /* PThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PThread.c; sourceTree = "<group>"; };
 		063A95AC1F06924A00017CDE /* PThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PThread.h; sourceTree = "<group>"; };
 		063A95AE1F069DBF00017CDE /* QOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QOperation.h; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		06EDB4E01F04EDCC00A16527 /* QObjcTour */ = {
 			isa = PBXGroup;
 			children = (
+				0626218C1F12910E00020CC4 /* MessagingForward */,
 				062621831F128E6E00020CC4 /* Network */,
-				062621841F128E6E00020CC4 /* MessagingForward */,
 				062621851F128E6E00020CC4 /* PageTracking */,
 				062621861F128E6E00020CC4 /* Method_SEL_IMP */,
 				06B3207C1F07AB3400FAA7DB /* NSArray+BoundsCheckking.h */,
@@ -313,10 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EDB4F41F04EDCC00A16527 /* LaunchScreen.storyboard in Resources */,
-				062621881F128E6E00020CC4 /* MessagingForward in Resources */,
 				0626218A1F128E6E00020CC4 /* Method_SEL_IMP in Resources */,
 				06EDB4F11F04EDCC00A16527 /* Assets.xcassets in Resources */,
 				06EDB4EC1F04EDCC00A16527 /* Main.storyboard in Resources */,
+				0626218D1F12910E00020CC4 /* MessagingForward in Resources */,
 				062621871F128E6E00020CC4 /* Network in Resources */,
 				062621891F128E6E00020CC4 /* PageTracking in Resources */,
 			);
