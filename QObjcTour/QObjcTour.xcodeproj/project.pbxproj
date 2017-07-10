@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062561471F1306DE00EC879E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062561461F1306DE00EC879E /* CoreData.framework */; };
+		0633017F1F1374AD00727E56 /* PersonModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0633017D1F1374AD00727E56 /* PersonModel.xcdatamodeld */; };
+		063301821F13750E00727E56 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 063301811F13750E00727E56 /* CoreDataManager.m */; };
+		063301921F137BAD00727E56 /* Person+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 063301911F137BAD00727E56 /* Person+Functions.m */; };
+		063301951F137D9500727E56 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 063301941F137D9500727E56 /* Person.m */; };
+		063301981F1380F700727E56 /* CoreDataModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063301971F1380F700727E56 /* CoreDataModelController.m */; };
 		063A95AD1F06924A00017CDE /* PThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AB1F06924A00017CDE /* PThread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		063A95B01F069DBF00017CDE /* QOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95AF1F069DBF00017CDE /* QOperation.m */; };
 		063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A95B21F06A63000017CDE /* RTAPIBaseManager.m */; };
@@ -57,11 +63,6 @@
 		069403311F12E8580085F5EB /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403201F12E8580085F5EB /* UIProgressView+AFNetworking.m */; };
 		069403321F12E8580085F5EB /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403221F12E8580085F5EB /* UIRefreshControl+AFNetworking.m */; };
 		069403331F12E8580085F5EB /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403241F12E8580085F5EB /* UIWebView+AFNetworking.m */; };
-		0694035D1F13005C0085F5EB /* QObjcTour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0694035B1F13005C0085F5EB /* QObjcTour.xcdatamodeld */; };
-		069403661F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0694035F1F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.m */; };
-		069403671F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403611F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.m */; };
-		069403681F1301BB0085F5EB /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403631F1301BB0085F5EB /* ContactInfo+CoreDataClass.m */; };
-		069403691F1301BB0085F5EB /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 069403651F1301BB0085F5EB /* ContactInfo+CoreDataProperties.m */; };
 		06B320801F07AB3400FAA7DB /* QUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */; };
 		06EDB4E31F04EDCC00A16527 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E21F04EDCC00A16527 /* main.m */; };
 		06EDB4E61F04EDCC00A16527 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EDB4E51F04EDCC00A16527 /* AppDelegate.m */; };
@@ -91,6 +92,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062561461F1306DE00EC879E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0633017E1F1374AD00727E56 /* PersonModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonModel.xcdatamodel; sourceTree = "<group>"; };
+		063301801F13750E00727E56 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		063301811F13750E00727E56 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		063301901F137BAD00727E56 /* Person+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Functions.h"; sourceTree = "<group>"; };
+		063301911F137BAD00727E56 /* Person+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Functions.m"; sourceTree = "<group>"; };
+		063301931F137D9500727E56 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		063301941F137D9500727E56 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		063301961F1380F700727E56 /* CoreDataModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataModelController.h; sourceTree = "<group>"; };
+		063301971F1380F700727E56 /* CoreDataModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataModelController.m; sourceTree = "<group>"; };
 		063A95AB1F06924A00017CDE /* PThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PThread.c; sourceTree = "<group>"; };
 		063A95AC1F06924A00017CDE /* PThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PThread.h; sourceTree = "<group>"; };
 		063A95AE1F069DBF00017CDE /* QOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QOperation.h; sourceTree = "<group>"; };
@@ -193,15 +204,6 @@
 		069403221F12E8580085F5EB /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		069403231F12E8580085F5EB /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		069403241F12E8580085F5EB /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		0694035C1F13005C0085F5EB /* QObjcTour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QObjcTour.xcdatamodel; sourceTree = "<group>"; };
-		0694035E1F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactDetailInfo+CoreDataClass.h"; sourceTree = "<group>"; };
-		0694035F1F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactDetailInfo+CoreDataClass.m"; sourceTree = "<group>"; };
-		069403601F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactDetailInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		069403611F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactDetailInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		069403621F1301BB0085F5EB /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
-		069403631F1301BB0085F5EB /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
-		069403641F1301BB0085F5EB /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		069403651F1301BB0085F5EB /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		06B3207E1F07AB3400FAA7DB /* QUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QUserDefault.swift; sourceTree = "<group>"; };
 		06EDB4DE1F04EDCC00A16527 /* QObjcTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QObjcTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB4E21F04EDCC00A16527 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062561471F1306DE00EC879E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +250,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062561451F1306DE00EC879E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062561461F1306DE00EC879E /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0694027D1F12973A0085F5EB /* MessagingForward */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,14 +513,15 @@
 		069403341F12F78A0085F5EB /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0694035E1F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.h */,
-				0694035F1F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.m */,
-				069403601F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.h */,
-				069403611F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.m */,
-				069403621F1301BB0085F5EB /* ContactInfo+CoreDataClass.h */,
-				069403631F1301BB0085F5EB /* ContactInfo+CoreDataClass.m */,
-				069403641F1301BB0085F5EB /* ContactInfo+CoreDataProperties.h */,
-				069403651F1301BB0085F5EB /* ContactInfo+CoreDataProperties.m */,
+				063301941F137D9500727E56 /* Person.m */,
+				063301931F137D9500727E56 /* Person.h */,
+				063301901F137BAD00727E56 /* Person+Functions.h */,
+				063301911F137BAD00727E56 /* Person+Functions.m */,
+				0633017D1F1374AD00727E56 /* PersonModel.xcdatamodeld */,
+				063301801F13750E00727E56 /* CoreDataManager.h */,
+				063301811F13750E00727E56 /* CoreDataManager.m */,
+				063301961F1380F700727E56 /* CoreDataModelController.h */,
+				063301971F1380F700727E56 /* CoreDataModelController.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -521,6 +533,7 @@
 				06EDB4FD1F04EDCC00A16527 /* QObjcTourTests */,
 				06EDB5081F04EDCC00A16527 /* QObjcTourUITests */,
 				06EDB4DF1F04EDCC00A16527 /* Products */,
+				062561451F1306DE00EC879E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -561,7 +574,6 @@
 				063A95B11F06A63000017CDE /* RTAPIBaseManager.h */,
 				063A95B21F06A63000017CDE /* RTAPIBaseManager.m */,
 				06FF5EE21F08B5E80079D1D3 /* QObjcTour-Prefix.pch */,
-				0694035B1F13005C0085F5EB /* QObjcTour.xcdatamodeld */,
 				06EDB4EA1F04EDCC00A16527 /* Main.storyboard */,
 				06EDB4F01F04EDCC00A16527 /* Assets.xcassets */,
 				06EDB4F21F04EDCC00A16527 /* LaunchScreen.storyboard */,
@@ -740,7 +752,6 @@
 				069402D81F12973A0085F5EB /* CTCachedObject.m in Sources */,
 				06EDB4E91F04EDCC00A16527 /* ViewController.m in Sources */,
 				069403261F12E8580085F5EB /* AFNetworkReachabilityManager.m in Sources */,
-				069403691F1301BB0085F5EB /* ContactInfo+CoreDataProperties.m in Sources */,
 				069402D31F12973A0085F5EB /* NSURLRequest+CTNetworkingMethods.m in Sources */,
 				063A95B31F06A63000017CDE /* RTAPIBaseManager.m in Sources */,
 				0694032D1F12E8580085F5EB /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -749,13 +760,13 @@
 				069402E51F12973A0085F5EB /* CTServiceFactory.m in Sources */,
 				063A95B01F069DBF00017CDE /* QOperation.m in Sources */,
 				069402DD1F12973A0085F5EB /* CTURLResponse.m in Sources */,
-				0694035D1F13005C0085F5EB /* QObjcTour.xcdatamodeld in Sources */,
 				069402CB1F12973A0085F5EB /* DynamicSetterAndGetter.m in Sources */,
 				069403291F12E8580085F5EB /* AFURLResponseSerialization.m in Sources */,
 				069403251F12E8580085F5EB /* AFHTTPSessionManager.m in Sources */,
 				0694032C1F12E8580085F5EB /* AFImageDownloader.m in Sources */,
 				069402E01F12973A0085F5EB /* CTNetworkingConfigurationManager.m in Sources */,
 				069402DB1F12973A0085F5EB /* CTLocationManager.m in Sources */,
+				063301951F137D9500727E56 /* Person.m in Sources */,
 				069402CA1F12973A0085F5EB /* DynamicResolutionTest.m in Sources */,
 				069402E21F12973A0085F5EB /* CTRequestGenerator.m in Sources */,
 				069402CE1F12973A0085F5EB /* NSArray+CTNetworkingMethods.m in Sources */,
@@ -777,18 +788,19 @@
 				069402E11F12973A0085F5EB /* CTCommonParamsGenerator.m in Sources */,
 				063A95AD1F06924A00017CDE /* PThread.c in Sources */,
 				069402E41F12973A0085F5EB /* CTService.m in Sources */,
-				069403681F1301BB0085F5EB /* ContactInfo+CoreDataClass.m in Sources */,
 				069402E31F12973A0085F5EB /* CTSignatureGenerator.m in Sources */,
 				069403281F12E8580085F5EB /* AFURLRequestSerialization.m in Sources */,
 				069403321F12E8580085F5EB /* UIRefreshControl+AFNetworking.m in Sources */,
 				064842201F05718B004FD24A /* QBlock.m in Sources */,
+				0633017F1F1374AD00727E56 /* PersonModel.xcdatamodeld in Sources */,
+				063301981F1380F700727E56 /* CoreDataModelController.m in Sources */,
 				069402D51F12973A0085F5EB /* CTApiProxy.m in Sources */,
-				069403671F1301BB0085F5EB /* ContactDetailInfo+CoreDataProperties.m in Sources */,
+				063301921F137BAD00727E56 /* Person+Functions.m in Sources */,
 				069402D01F12973A0085F5EB /* NSMutableString+CTNetworkingMethods.m in Sources */,
+				063301821F13750E00727E56 /* CoreDataManager.m in Sources */,
 				069402CF1F12973A0085F5EB /* NSDictionary+CTNetworkingMethods.m in Sources */,
 				0694032B1F12E8580085F5EB /* AFAutoPurgingImageCache.m in Sources */,
 				064842231F0637B0004FD24A /* PersonARC.m in Sources */,
-				069403661F1301BB0085F5EB /* ContactDetailInfo+CoreDataClass.m in Sources */,
 				069402D71F12973A0085F5EB /* CTCache.m in Sources */,
 				069402DE1F12973A0085F5EB /* CTLoggerConfiguration.m in Sources */,
 			);
@@ -1062,13 +1074,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0694035B1F13005C0085F5EB /* QObjcTour.xcdatamodeld */ = {
+		0633017D1F1374AD00727E56 /* PersonModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0694035C1F13005C0085F5EB /* QObjcTour.xcdatamodel */,
+				0633017E1F1374AD00727E56 /* PersonModel.xcdatamodel */,
 			);
-			currentVersion = 0694035C1F13005C0085F5EB /* QObjcTour.xcdatamodel */;
-			path = QObjcTour.xcdatamodeld;
+			currentVersion = 0633017E1F1374AD00727E56 /* PersonModel.xcdatamodel */;
+			path = PersonModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

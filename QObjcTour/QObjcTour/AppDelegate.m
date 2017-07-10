@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CoreDataManager.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self insertCoreData];
+//    [self insertCoreData];
     return YES;
 }
 
@@ -48,59 +49,17 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+//    [self saveContext];
+    
+    if (!self.manager) {
+        [self.manager saveContext];
+    }
 }
 
 
 #pragma mark - Core Data stack
 
 @synthesize persistentContainer = _persistentContainer;
-
-- (void)dataFetchRequest
-{
-    NSManagedObjectContext *context = _persistentContainer.viewContext;
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ContactInfo" inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSError *error;
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    for (NSManagedObject *info in fetchedObjects) {
-        MPLog(@"name:%@", [info valueForKey:@"name"]);
-        MPLog(@"age:%@", [info valueForKey:@"age"]);
-        MPLog(@"birthday:%@", [info valueForKey:@"birthday"]);
-        NSManagedObject *details = [info valueForKey:@"details"];
-        MPLog(@"address:%@", [details valueForKey:@"address"]);
-        MPLog(@"telephone:%@", [details valueForKey:@"telephone"]);
-    }
-    fetchRequest = nil;
-}
-
-- (void)insertCoreData
-{
-//    NSManagedObjectContext *context = [self managedObjectContext];
-    NSManagedObjectContext *context = _persistentContainer.viewContext;
-
-    
-    NSManagedObject *contactInfo = [NSEntityDescription insertNewObjectForEntityForName:@"ContactInfo" inManagedObjectContext:context];
-    [contactInfo setValue:@"name B" forKey:@"name"];
-    [contactInfo setValue:@"birthday B" forKey:@"birthday"];
-    [contactInfo setValue:@"age B" forKey:@"age"];
-    
-    NSManagedObject *contactDetailInfo = [NSEntityDescription insertNewObjectForEntityForName:@"ContactDetailInfo" inManagedObjectContext:context];
-    [contactDetailInfo setValue:@"address B" forKey:@"address"];
-    [contactDetailInfo setValue:@"name B" forKey:@"name"];
-    [contactDetailInfo setValue:@"telephone B" forKey:@"telephone"];
-    
-    [contactDetailInfo setValue:contactInfo forKey:@"info"];
-    [contactInfo setValue:contactDetailInfo forKey:@"details"];
-    
-    NSError *error;
-    if(![context save:&error]) {
-        MPLog(@"不能保存：%@",[error localizedDescription]);
-    }
-}
-
-
 
 - (NSPersistentContainer *)persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
