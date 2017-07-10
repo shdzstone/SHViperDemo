@@ -351,7 +351,7 @@
             requestIDToRemove = storedRequestId;
         }
     }
-    if (requestIDToRemove) {
+    if (requestIDToRemove!=nil) {
         [self.requestIdList removeObject:requestIDToRemove];
     }
 }

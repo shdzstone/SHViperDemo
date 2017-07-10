@@ -18,8 +18,7 @@
 #import "QObjcTour-Swift.h"
 
 #import <objc/runtime.h>
-#import "DynamicResolutionTest.h"
-
+#import "MessagingForward/DynamicResolutionTest.h"
 
 @interface ViewController ()<UITableViewDelegate>{
     UIImageView *_imageView;
@@ -93,6 +92,7 @@
 
     }
     MPLog(@"class=%@", [(__bridge id)p class]);
+    CFRelease(p);
     
 }
 

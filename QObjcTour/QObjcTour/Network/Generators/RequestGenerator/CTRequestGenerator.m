@@ -12,7 +12,7 @@
 #import "CTCommonParamsGenerator.h"
 #import "NSDictionary+CTNetworkingMethods.h"
 #import "NSObject+CTNetworkingMethods.h"
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 #import "CTService.h"
 #import "CTLogger.h"
 #import "NSURLRequest+CTNetworkingMethods.h"

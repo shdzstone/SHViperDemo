@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 casatwy. All rights reserved.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 #import "CTApiProxy.h"
 #import "CTServiceFactory.h"
 #import "CTRequestGenerator.h"
