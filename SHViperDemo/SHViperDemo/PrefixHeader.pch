@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  SHViperDemo
+//
+//  Created by cdz on 2018/6/7.
+//  Copyright © 2018年 cdz's mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+static const DDLogLevel ddLogLevel = DDLogLevelAll;
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+static const NSString *BEE_SERVICE_ADDRESS = @"http://bee.codedreamit.com";
+
+#import "UserInfoModel.h"
+
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) weak##o = o;
+#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = weak##o;
+
+//颜色
+#define RGBColor(R, G, B) [UIColor colorWithRed:((R) / 255.0f) green:((G) / 255.0f) blue:((B) / 255.0f) alpha:1.0]
+#define HexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */

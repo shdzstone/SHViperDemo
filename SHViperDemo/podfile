@@ -1,0 +1,16 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+use_frameworks!
+
+target 'SHViperDemo' do
+    platform :ios, '9.0'
+    project 'SHViperDemo.xcodeproj'
+    
+    pod 'Masonry', '~> 1.1.0'
+    pod 'AFNetworking','~>3.1.0'
+    pod 'CocoaLumberjack', '~> 3.4.1'
+    pod 'MJExtension', '~> 3.0.13'
+
+end
