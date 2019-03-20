@@ -3,17 +3,16 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
+//  ___COPYRIGHT___
 
 #import <UIKit/UIKit.h>
-#import "SHViperView.h"
-#import "___VARIABLE_productName___ViewInput.h"
+#import "___VARIABLE_productName___EventHandler.h"
+#import "___VARIABLE_productName___DataSource.h"
+#import "___VARIABLE_productName___Protocol.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface ___VARIABLE_productName___View : UIView <___VARIABLE_productName___Protocol>
 
-@interface ___VARIABLE_productName___View : UIView <SHViperView, ___VARIABLE_productName___ViewInput>
-
+#pragma mark - viper
+- (void)bindPresenter:(id)presenter;
+//
 @end
-
-NS_ASSUME_NONNULL_END

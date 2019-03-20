@@ -8,35 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0698F0DA20C8DE9E00F6E2F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F0D920C8DE9E00F6E2F3 /* AppDelegate.m */; };
-		0698F0DD20C8DE9E00F6E2F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F0DC20C8DE9E00F6E2F3 /* ViewController.m */; };
-		0698F0E020C8DE9E00F6E2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0698F0DE20C8DE9E00F6E2F3 /* Main.storyboard */; };
 		0698F0E220C8DEA000F6E2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0698F0E120C8DEA000F6E2F3 /* Assets.xcassets */; };
 		0698F0E520C8DEA000F6E2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0698F0E320C8DEA000F6E2F3 /* LaunchScreen.storyboard */; };
 		0698F0E820C8DEA000F6E2F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F0E720C8DEA000F6E2F3 /* main.m */; };
 		0698F0F220C8DEA000F6E2F3 /* SHViperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F0F120C8DEA000F6E2F3 /* SHViperDemoTests.m */; };
 		0698F0FD20C8DEA000F6E2F3 /* SHViperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F0FC20C8DEA000F6E2F3 /* SHViperDemoUITests.m */; };
-		0698F1AB20C8DF2400F6E2F3 /* NSObject+SHViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F17B20C8DF2400F6E2F3 /* NSObject+SHViperAssembly.m */; };
-		0698F1AC20C8DF2400F6E2F3 /* UIViewController+SHViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F17E20C8DF2400F6E2F3 /* UIViewController+SHViperRouter.m */; };
-		0698F1AD20C8DF2400F6E2F3 /* SHRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F18120C8DF2400F6E2F3 /* SHRouter.m */; };
-		0698F1AE20C8DF2400F6E2F3 /* SHDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F18720C8DF2400F6E2F3 /* SHDataService.m */; };
-		0698F1AF20C8DF2400F6E2F3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0698F18A20C8DF2400F6E2F3 /* Info.plist */; };
-		0698F1DC20C8FD1200F6E2F3 /* SHRouter+ViperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1C220C8FD1200F6E2F3 /* SHRouter+ViperTest.m */; };
-		0698F1DD20C8FD1200F6E2F3 /* ViperTestWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1C620C8FD1200F6E2F3 /* ViperTestWireframe.m */; };
-		0698F1DE20C8FD1200F6E2F3 /* ViperTestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1CA20C8FD1200F6E2F3 /* ViperTestBuilder.m */; };
-		0698F1DF20C8FD1200F6E2F3 /* ViperTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1CD20C8FD1200F6E2F3 /* ViperTestViewController.m */; };
-		0698F1E020C8FD1200F6E2F3 /* ViperTestViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1D320C8FD1200F6E2F3 /* ViperTestViewPresenter.m */; };
-		0698F1E120C8FD1200F6E2F3 /* SHDataService+ViperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1D520C8FD1200F6E2F3 /* SHDataService+ViperTest.m */; };
-		0698F1E220C8FD1200F6E2F3 /* ViperTestInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1DB20C8FD1200F6E2F3 /* ViperTestInteractor.m */; };
-		0698F20E20C8FD7D00F6E2F3 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1F720C8FD7D00F6E2F3 /* UserViewController.m */; };
-		0698F20F20C8FD7D00F6E2F3 /* SHRouter+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1FA20C8FD7D00F6E2F3 /* SHRouter+User.m */; };
-		0698F21020C8FD7D00F6E2F3 /* UserWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F1FF20C8FD7D00F6E2F3 /* UserWireframe.m */; };
-		0698F21120C8FD7D00F6E2F3 /* UserBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F20220C8FD7D00F6E2F3 /* UserBuilder.m */; };
-		0698F21220C8FD7D00F6E2F3 /* UserViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F20420C8FD7D00F6E2F3 /* UserViewPresenter.m */; };
-		0698F21320C8FD7D00F6E2F3 /* SHDataService+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F20720C8FD7D00F6E2F3 /* SHDataService+User.m */; };
-		0698F21420C8FD7D00F6E2F3 /* UserInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F20A20C8FD7D00F6E2F3 /* UserInteractor.m */; };
-		0698F21820C8FD9F00F6E2F3 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F21720C8FD9F00F6E2F3 /* UserInfoModel.m */; };
 		0698F21D20C8FE6100F6E2F3 /* LumberJackFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F21C20C8FE6100F6E2F3 /* LumberJackFormatter.m */; };
-		10737050E227EDB821426D13 /* Pods_SHViperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598C7737245E18DA60CDF358 /* Pods_SHViperDemo.framework */; };
+		37D5D868BAF460CDAFD20028 /* libPods-SHViperDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58C3C2A1B4341E2A738F41 /* libPods-SHViperDemo.a */; };
+		8E15A7362242371200553059 /* ControllerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A7282242371200553059 /* ControllerInteractor.m */; };
+		8E15A7372242371200553059 /* ControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A72B2242371200553059 /* ControllerPresenter.m */; };
+		8E15A7382242371200553059 /* ControllerRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A72F2242371200553059 /* ControllerRouter.m */; };
+		8E15A7392242371200553059 /* ControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A7352242371200553059 /* ControllerView.m */; };
+		8E15A7642242394300553059 /* TestInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A7572242394200553059 /* TestInteractor.m */; };
+		8E15A7652242394300553059 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A75C2242394200553059 /* TestView.m */; };
+		8E15A7662242394300553059 /* TestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A75F2242394300553059 /* TestPresenter.m */; };
+		8E15A7672242394300553059 /* TestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15A7632242394300553059 /* TestRouter.m */; };
+		8E7A7E92224230F700CF3A76 /* SHDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A7E8F224230F700CF3A76 /* SHDataService.m */; };
+		8E7A7E93224230F700CF3A76 /* NSAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A7E90224230F700CF3A76 /* NSAssistant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +48,6 @@
 		0698F0D520C8DE9E00F6E2F3 /* SHViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0698F0D820C8DE9E00F6E2F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0698F0D920C8DE9E00F6E2F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0698F0DB20C8DE9E00F6E2F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0698F0DC20C8DE9E00F6E2F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0698F0DF20C8DE9E00F6E2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0698F0E120C8DEA000F6E2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0698F0E420C8DEA000F6E2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0698F0E620C8DEA000F6E2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,78 +58,41 @@
 		0698F0F820C8DEA000F6E2F3 /* SHViperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHViperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0698F0FC20C8DEA000F6E2F3 /* SHViperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHViperDemoUITests.m; sourceTree = "<group>"; };
 		0698F0FE20C8DEA000F6E2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0698F17620C8DF2400F6E2F3 /* SHViper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViper.h; sourceTree = "<group>"; };
-		0698F17720C8DF2400F6E2F3 /* SHViperWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperWireframe.h; sourceTree = "<group>"; };
-		0698F17820C8DF2400F6E2F3 /* SHViperDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperDataService.h; sourceTree = "<group>"; };
-		0698F17920C8DF2400F6E2F3 /* SHViperInteractorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperInteractorPrivate.h; sourceTree = "<group>"; };
-		0698F17A20C8DF2400F6E2F3 /* SHViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperRouter.h; sourceTree = "<group>"; };
-		0698F17B20C8DF2400F6E2F3 /* NSObject+SHViperAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SHViperAssembly.m"; sourceTree = "<group>"; };
-		0698F17C20C8DF2400F6E2F3 /* SHViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperPresenter.h; sourceTree = "<group>"; };
-		0698F17D20C8DF2400F6E2F3 /* SHDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDataService.h; sourceTree = "<group>"; };
-		0698F17E20C8DF2400F6E2F3 /* UIViewController+SHViperRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHViperRouter.m"; sourceTree = "<group>"; };
-		0698F17F20C8DF2400F6E2F3 /* SHViperWireframePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperWireframePrivate.h; sourceTree = "<group>"; };
-		0698F18020C8DF2400F6E2F3 /* SHViperPresenterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperPresenterPrivate.h; sourceTree = "<group>"; };
-		0698F18120C8DF2400F6E2F3 /* SHRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRouter.m; sourceTree = "<group>"; };
-		0698F18220C8DF2400F6E2F3 /* SHViperInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperInteractor.h; sourceTree = "<group>"; };
-		0698F18320C8DF2400F6E2F3 /* SHViperDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperDef.h; sourceTree = "<group>"; };
-		0698F18420C8DF2400F6E2F3 /* NSObject+SHViperAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SHViperAssembly.h"; sourceTree = "<group>"; };
-		0698F18520C8DF2400F6E2F3 /* SHViperViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperViewPrivate.h; sourceTree = "<group>"; };
-		0698F18620C8DF2400F6E2F3 /* UIViewController+SHViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHViperRouter.h"; sourceTree = "<group>"; };
-		0698F18720C8DF2400F6E2F3 /* SHDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDataService.m; sourceTree = "<group>"; };
-		0698F18820C8DF2400F6E2F3 /* SHRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRouter.h; sourceTree = "<group>"; };
-		0698F18920C8DF2400F6E2F3 /* SHViperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperView.h; sourceTree = "<group>"; };
-		0698F18A20C8DF2400F6E2F3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0698F18B20C8DF2400F6E2F3 /* SHViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperViewEventHandler.h; sourceTree = "<group>"; };
-		0698F1C120C8FD1200F6E2F3 /* SHRouter+ViperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHRouter+ViperTest.h"; sourceTree = "<group>"; };
-		0698F1C220C8FD1200F6E2F3 /* SHRouter+ViperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHRouter+ViperTest.m"; sourceTree = "<group>"; };
-		0698F1C420C8FD1200F6E2F3 /* ViperTestWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestWireframe.h; sourceTree = "<group>"; };
-		0698F1C520C8FD1200F6E2F3 /* ViperTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestRouter.h; sourceTree = "<group>"; };
-		0698F1C620C8FD1200F6E2F3 /* ViperTestWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperTestWireframe.m; sourceTree = "<group>"; };
-		0698F1C720C8FD1200F6E2F3 /* ViperTestWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestWireframeInput.h; sourceTree = "<group>"; };
-		0698F1C920C8FD1200F6E2F3 /* ViperTestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestBuilder.h; sourceTree = "<group>"; };
-		0698F1CA20C8FD1200F6E2F3 /* ViperTestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperTestBuilder.m; sourceTree = "<group>"; };
-		0698F1CC20C8FD1200F6E2F3 /* ViperTestViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestViewInput.h; sourceTree = "<group>"; };
-		0698F1CD20C8FD1200F6E2F3 /* ViperTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperTestViewController.m; sourceTree = "<group>"; };
-		0698F1CE20C8FD1200F6E2F3 /* ViperTestViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestViewEventHandler.h; sourceTree = "<group>"; };
-		0698F1CF20C8FD1200F6E2F3 /* ViperTestViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestViewDataSource.h; sourceTree = "<group>"; };
-		0698F1D020C8FD1200F6E2F3 /* ViperTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestViewController.h; sourceTree = "<group>"; };
-		0698F1D220C8FD1200F6E2F3 /* ViperTestViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestViewPresenter.h; sourceTree = "<group>"; };
-		0698F1D320C8FD1200F6E2F3 /* ViperTestViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperTestViewPresenter.m; sourceTree = "<group>"; };
-		0698F1D520C8FD1200F6E2F3 /* SHDataService+ViperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHDataService+ViperTest.m"; sourceTree = "<group>"; };
-		0698F1D620C8FD1200F6E2F3 /* SHDataService+ViperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDataService+ViperTest.h"; sourceTree = "<group>"; };
-		0698F1D820C8FD1200F6E2F3 /* ViperTestInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestInteractor.h; sourceTree = "<group>"; };
-		0698F1D920C8FD1200F6E2F3 /* ViperTestInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestInteractorInput.h; sourceTree = "<group>"; };
-		0698F1DA20C8FD1200F6E2F3 /* ViperTestDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperTestDataService.h; sourceTree = "<group>"; };
-		0698F1DB20C8FD1200F6E2F3 /* ViperTestInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperTestInteractor.m; sourceTree = "<group>"; };
-		0698F1F320C8FD7D00F6E2F3 /* UserViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewEventHandler.h; sourceTree = "<group>"; };
-		0698F1F420C8FD7D00F6E2F3 /* UserViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewInput.h; sourceTree = "<group>"; };
-		0698F1F520C8FD7D00F6E2F3 /* UserViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewDataSource.h; sourceTree = "<group>"; };
-		0698F1F620C8FD7D00F6E2F3 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
-		0698F1F720C8FD7D00F6E2F3 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
-		0698F1F920C8FD7D00F6E2F3 /* SHRouter+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHRouter+User.h"; sourceTree = "<group>"; };
-		0698F1FA20C8FD7D00F6E2F3 /* SHRouter+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHRouter+User.m"; sourceTree = "<group>"; };
-		0698F1FC20C8FD7D00F6E2F3 /* UserWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWireframe.h; sourceTree = "<group>"; };
-		0698F1FD20C8FD7D00F6E2F3 /* UserWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWireframeInput.h; sourceTree = "<group>"; };
-		0698F1FE20C8FD7D00F6E2F3 /* UserRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRouter.h; sourceTree = "<group>"; };
-		0698F1FF20C8FD7D00F6E2F3 /* UserWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWireframe.m; sourceTree = "<group>"; };
-		0698F20120C8FD7D00F6E2F3 /* UserBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBuilder.h; sourceTree = "<group>"; };
-		0698F20220C8FD7D00F6E2F3 /* UserBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBuilder.m; sourceTree = "<group>"; };
-		0698F20420C8FD7D00F6E2F3 /* UserViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewPresenter.m; sourceTree = "<group>"; };
-		0698F20520C8FD7D00F6E2F3 /* UserViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewPresenter.h; sourceTree = "<group>"; };
-		0698F20720C8FD7D00F6E2F3 /* SHDataService+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHDataService+User.m"; sourceTree = "<group>"; };
-		0698F20820C8FD7D00F6E2F3 /* SHDataService+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDataService+User.h"; sourceTree = "<group>"; };
-		0698F20A20C8FD7D00F6E2F3 /* UserInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInteractor.m; sourceTree = "<group>"; };
-		0698F20B20C8FD7D00F6E2F3 /* UserDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataService.h; sourceTree = "<group>"; };
-		0698F20C20C8FD7D00F6E2F3 /* UserInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInteractor.h; sourceTree = "<group>"; };
-		0698F20D20C8FD7D00F6E2F3 /* UserInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInteractorInput.h; sourceTree = "<group>"; };
-		0698F21620C8FD9F00F6E2F3 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
-		0698F21720C8FD9F00F6E2F3 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		0698F21920C8FDB500F6E2F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0698F21B20C8FE6100F6E2F3 /* LumberJackFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberJackFormatter.h; sourceTree = "<group>"; };
 		0698F21C20C8FE6100F6E2F3 /* LumberJackFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberJackFormatter.m; sourceTree = "<group>"; };
-		598C7737245E18DA60CDF358 /* Pods_SHViperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHViperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29809266778201F18CD7608 /* Pods-SHViperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHViperDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D8BABD399A220C7159A4DC43 /* Pods-SHViperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHViperDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0906FA65633D2CFA80ED0A85 /* Pods-SHViperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHViperDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo.release.xcconfig"; sourceTree = "<group>"; };
+		786C4AA4ACC32374BDCD547A /* Pods-SHViperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHViperDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B58C3C2A1B4341E2A738F41 /* libPods-SHViperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHViperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E15A7282242371200553059 /* ControllerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInteractor.m; sourceTree = "<group>"; };
+		8E15A7292242371200553059 /* ControllerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInteractor.h; sourceTree = "<group>"; };
+		8E15A72B2242371200553059 /* ControllerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerPresenter.m; sourceTree = "<group>"; };
+		8E15A72C2242371200553059 /* ControllerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerPresenter.h; sourceTree = "<group>"; };
+		8E15A72E2242371200553059 /* ControllerRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerRouter.h; sourceTree = "<group>"; };
+		8E15A72F2242371200553059 /* ControllerRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerRouter.m; sourceTree = "<group>"; };
+		8E15A7312242371200553059 /* ControllerEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerEventHandler.h; sourceTree = "<group>"; };
+		8E15A7322242371200553059 /* ControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerDataSource.h; sourceTree = "<group>"; };
+		8E15A7332242371200553059 /* ControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerView.h; sourceTree = "<group>"; };
+		8E15A7342242371200553059 /* ControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerProtocol.h; sourceTree = "<group>"; };
+		8E15A7352242371200553059 /* ControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerView.m; sourceTree = "<group>"; };
+		8E15A7562242394200553059 /* TestInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInteractor.h; sourceTree = "<group>"; };
+		8E15A7572242394200553059 /* TestInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInteractor.m; sourceTree = "<group>"; };
+		8E15A7592242394200553059 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		8E15A75A2242394200553059 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		8E15A75B2242394200553059 /* TestEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEventHandler.h; sourceTree = "<group>"; };
+		8E15A75C2242394200553059 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		8E15A75D2242394200553059 /* TestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataSource.h; sourceTree = "<group>"; };
+		8E15A75F2242394300553059 /* TestPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPresenter.m; sourceTree = "<group>"; };
+		8E15A7602242394300553059 /* TestPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPresenter.h; sourceTree = "<group>"; };
+		8E15A7622242394300553059 /* TestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRouter.h; sourceTree = "<group>"; };
+		8E15A7632242394300553059 /* TestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRouter.m; sourceTree = "<group>"; };
+		8E7A7E8B224230F700CF3A76 /* SHViperBlockDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperBlockDef.h; sourceTree = "<group>"; };
+		8E7A7E8C224230F700CF3A76 /* NSAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAssistant.h; sourceTree = "<group>"; };
+		8E7A7E8D224230F700CF3A76 /* SHDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDataService.h; sourceTree = "<group>"; };
+		8E7A7E8E224230F700CF3A76 /* BlockMacroDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockMacroDefines.h; sourceTree = "<group>"; };
+		8E7A7E8F224230F700CF3A76 /* SHDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDataService.m; sourceTree = "<group>"; };
+		8E7A7E90224230F700CF3A76 /* NSAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAssistant.m; sourceTree = "<group>"; };
+		8E7A7E91224230F700CF3A76 /* SHViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHViperViewEventHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10737050E227EDB821426D13 /* Pods_SHViperDemo.framework in Frameworks */,
+				37D5D868BAF460CDAFD20028 /* libPods-SHViperDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,19 +146,12 @@
 		0698F0D720C8DE9E00F6E2F3 /* SHViperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0698F10A20C8DF2400F6E2F3 /* Library */,
-				0698F0D820C8DE9E00F6E2F3 /* AppDelegate.h */,
-				0698F0D920C8DE9E00F6E2F3 /* AppDelegate.m */,
-				0698F0DB20C8DE9E00F6E2F3 /* ViewController.h */,
-				0698F0DC20C8DE9E00F6E2F3 /* ViewController.m */,
-				0698F1E320C8FD6700F6E2F3 /* UserModule */,
-				0698F1B120C8FCFE00F6E2F3 /* ViperTest */,
-				0698F0DE20C8DE9E00F6E2F3 /* Main.storyboard */,
-				0698F0E120C8DEA000F6E2F3 /* Assets.xcassets */,
-				0698F0E320C8DEA000F6E2F3 /* LaunchScreen.storyboard */,
+				8E7A7EE52242368F00CF3A76 /* ViewTest */,
+				8E7A7EE42242368400CF3A76 /* ControllerTest */,
 				0698F0E620C8DEA000F6E2F3 /* Info.plist */,
 				0698F21920C8FDB500F6E2F3 /* PrefixHeader.pch */,
-				0698F0E720C8DEA000F6E2F3 /* main.m */,
+				8E7A7E94224233D800CF3A76 /* Application */,
+				0698F10A20C8DF2400F6E2F3 /* Library */,
 			);
 			path = SHViperDemo;
 			sourceTree = "<group>";
@@ -236,217 +177,10 @@
 		0698F10A20C8DF2400F6E2F3 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A7E8A224230F700CF3A76 /* SHViper */,
 				0698F21A20C8FE6100F6E2F3 /* LumberJackFormatter */,
-				0698F17520C8DF2400F6E2F3 /* SHViper */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		0698F17520C8DF2400F6E2F3 /* SHViper */ = {
-			isa = PBXGroup;
-			children = (
-				0698F17620C8DF2400F6E2F3 /* SHViper.h */,
-				0698F17720C8DF2400F6E2F3 /* SHViperWireframe.h */,
-				0698F17820C8DF2400F6E2F3 /* SHViperDataService.h */,
-				0698F17920C8DF2400F6E2F3 /* SHViperInteractorPrivate.h */,
-				0698F17A20C8DF2400F6E2F3 /* SHViperRouter.h */,
-				0698F17B20C8DF2400F6E2F3 /* NSObject+SHViperAssembly.m */,
-				0698F17C20C8DF2400F6E2F3 /* SHViperPresenter.h */,
-				0698F17D20C8DF2400F6E2F3 /* SHDataService.h */,
-				0698F17E20C8DF2400F6E2F3 /* UIViewController+SHViperRouter.m */,
-				0698F17F20C8DF2400F6E2F3 /* SHViperWireframePrivate.h */,
-				0698F18020C8DF2400F6E2F3 /* SHViperPresenterPrivate.h */,
-				0698F18120C8DF2400F6E2F3 /* SHRouter.m */,
-				0698F18220C8DF2400F6E2F3 /* SHViperInteractor.h */,
-				0698F18320C8DF2400F6E2F3 /* SHViperDef.h */,
-				0698F18420C8DF2400F6E2F3 /* NSObject+SHViperAssembly.h */,
-				0698F18520C8DF2400F6E2F3 /* SHViperViewPrivate.h */,
-				0698F18620C8DF2400F6E2F3 /* UIViewController+SHViperRouter.h */,
-				0698F18720C8DF2400F6E2F3 /* SHDataService.m */,
-				0698F18820C8DF2400F6E2F3 /* SHRouter.h */,
-				0698F18920C8DF2400F6E2F3 /* SHViperView.h */,
-				0698F18A20C8DF2400F6E2F3 /* Info.plist */,
-				0698F18B20C8DF2400F6E2F3 /* SHViperViewEventHandler.h */,
-			);
-			path = SHViper;
-			sourceTree = "<group>";
-		};
-		0698F1B120C8FCFE00F6E2F3 /* ViperTest */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1C820C8FD1200F6E2F3 /* Builder */,
-				0698F1D420C8FD1200F6E2F3 /* DataService */,
-				0698F1D720C8FD1200F6E2F3 /* Interactor */,
-				0698F1D120C8FD1200F6E2F3 /* Presenter */,
-				0698F1C020C8FD1200F6E2F3 /* Router */,
-				0698F1CB20C8FD1200F6E2F3 /* View */,
-				0698F1C320C8FD1200F6E2F3 /* Wireframe */,
-			);
-			path = ViperTest;
-			sourceTree = "<group>";
-		};
-		0698F1C020C8FD1200F6E2F3 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1C120C8FD1200F6E2F3 /* SHRouter+ViperTest.h */,
-				0698F1C220C8FD1200F6E2F3 /* SHRouter+ViperTest.m */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		0698F1C320C8FD1200F6E2F3 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1C420C8FD1200F6E2F3 /* ViperTestWireframe.h */,
-				0698F1C520C8FD1200F6E2F3 /* ViperTestRouter.h */,
-				0698F1C620C8FD1200F6E2F3 /* ViperTestWireframe.m */,
-				0698F1C720C8FD1200F6E2F3 /* ViperTestWireframeInput.h */,
-			);
-			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		0698F1C820C8FD1200F6E2F3 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1C920C8FD1200F6E2F3 /* ViperTestBuilder.h */,
-				0698F1CA20C8FD1200F6E2F3 /* ViperTestBuilder.m */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		0698F1CB20C8FD1200F6E2F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1CC20C8FD1200F6E2F3 /* ViperTestViewInput.h */,
-				0698F1CD20C8FD1200F6E2F3 /* ViperTestViewController.m */,
-				0698F1CE20C8FD1200F6E2F3 /* ViperTestViewEventHandler.h */,
-				0698F1CF20C8FD1200F6E2F3 /* ViperTestViewDataSource.h */,
-				0698F1D020C8FD1200F6E2F3 /* ViperTestViewController.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0698F1D120C8FD1200F6E2F3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1D220C8FD1200F6E2F3 /* ViperTestViewPresenter.h */,
-				0698F1D320C8FD1200F6E2F3 /* ViperTestViewPresenter.m */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		0698F1D420C8FD1200F6E2F3 /* DataService */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1D520C8FD1200F6E2F3 /* SHDataService+ViperTest.m */,
-				0698F1D620C8FD1200F6E2F3 /* SHDataService+ViperTest.h */,
-			);
-			path = DataService;
-			sourceTree = "<group>";
-		};
-		0698F1D720C8FD1200F6E2F3 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1D820C8FD1200F6E2F3 /* ViperTestInteractor.h */,
-				0698F1D920C8FD1200F6E2F3 /* ViperTestInteractorInput.h */,
-				0698F1DA20C8FD1200F6E2F3 /* ViperTestDataService.h */,
-				0698F1DB20C8FD1200F6E2F3 /* ViperTestInteractor.m */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		0698F1E320C8FD6700F6E2F3 /* UserModule */ = {
-			isa = PBXGroup;
-			children = (
-				0698F21520C8FD8E00F6E2F3 /* Entity */,
-				0698F20620C8FD7D00F6E2F3 /* DataService */,
-				0698F1F820C8FD7D00F6E2F3 /* Router */,
-				0698F20020C8FD7D00F6E2F3 /* Builder */,
-				0698F20920C8FD7D00F6E2F3 /* Interactor */,
-				0698F20320C8FD7D00F6E2F3 /* Presenter */,
-				0698F1F220C8FD7D00F6E2F3 /* View */,
-				0698F1FB20C8FD7D00F6E2F3 /* Wireframe */,
-			);
-			path = UserModule;
-			sourceTree = "<group>";
-		};
-		0698F1F220C8FD7D00F6E2F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1F320C8FD7D00F6E2F3 /* UserViewEventHandler.h */,
-				0698F1F420C8FD7D00F6E2F3 /* UserViewInput.h */,
-				0698F1F520C8FD7D00F6E2F3 /* UserViewDataSource.h */,
-				0698F1F620C8FD7D00F6E2F3 /* UserViewController.h */,
-				0698F1F720C8FD7D00F6E2F3 /* UserViewController.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0698F1F820C8FD7D00F6E2F3 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1F920C8FD7D00F6E2F3 /* SHRouter+User.h */,
-				0698F1FA20C8FD7D00F6E2F3 /* SHRouter+User.m */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		0698F1FB20C8FD7D00F6E2F3 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				0698F1FC20C8FD7D00F6E2F3 /* UserWireframe.h */,
-				0698F1FD20C8FD7D00F6E2F3 /* UserWireframeInput.h */,
-				0698F1FE20C8FD7D00F6E2F3 /* UserRouter.h */,
-				0698F1FF20C8FD7D00F6E2F3 /* UserWireframe.m */,
-			);
-			path = Wireframe;
-			sourceTree = "<group>";
-		};
-		0698F20020C8FD7D00F6E2F3 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				0698F20120C8FD7D00F6E2F3 /* UserBuilder.h */,
-				0698F20220C8FD7D00F6E2F3 /* UserBuilder.m */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		0698F20320C8FD7D00F6E2F3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				0698F20420C8FD7D00F6E2F3 /* UserViewPresenter.m */,
-				0698F20520C8FD7D00F6E2F3 /* UserViewPresenter.h */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		0698F20620C8FD7D00F6E2F3 /* DataService */ = {
-			isa = PBXGroup;
-			children = (
-				0698F20720C8FD7D00F6E2F3 /* SHDataService+User.m */,
-				0698F20820C8FD7D00F6E2F3 /* SHDataService+User.h */,
-			);
-			path = DataService;
-			sourceTree = "<group>";
-		};
-		0698F20920C8FD7D00F6E2F3 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				0698F20A20C8FD7D00F6E2F3 /* UserInteractor.m */,
-				0698F20B20C8FD7D00F6E2F3 /* UserDataService.h */,
-				0698F20C20C8FD7D00F6E2F3 /* UserInteractor.h */,
-				0698F20D20C8FD7D00F6E2F3 /* UserInteractorInput.h */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		0698F21520C8FD8E00F6E2F3 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				0698F21620C8FD9F00F6E2F3 /* UserInfoModel.h */,
-				0698F21720C8FD9F00F6E2F3 /* UserInfoModel.m */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		0698F21A20C8FE6100F6E2F3 /* LumberJackFormatter */ = {
@@ -461,7 +195,7 @@
 		27566BEB604ECC8DD939894E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				598C7737245E18DA60CDF358 /* Pods_SHViperDemo.framework */,
+				8B58C3C2A1B4341E2A738F41 /* libPods-SHViperDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -469,10 +203,136 @@
 		53A3D6E5C436CFDD4FD4073B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8BABD399A220C7159A4DC43 /* Pods-SHViperDemo.debug.xcconfig */,
-				A29809266778201F18CD7608 /* Pods-SHViperDemo.release.xcconfig */,
+				786C4AA4ACC32374BDCD547A /* Pods-SHViperDemo.debug.xcconfig */,
+				0906FA65633D2CFA80ED0A85 /* Pods-SHViperDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E15A7272242371200553059 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7282242371200553059 /* ControllerInteractor.m */,
+				8E15A7292242371200553059 /* ControllerInteractor.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8E15A72A2242371200553059 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A72B2242371200553059 /* ControllerPresenter.m */,
+				8E15A72C2242371200553059 /* ControllerPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8E15A72D2242371200553059 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A72E2242371200553059 /* ControllerRouter.h */,
+				8E15A72F2242371200553059 /* ControllerRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8E15A7302242371200553059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7312242371200553059 /* ControllerEventHandler.h */,
+				8E15A7322242371200553059 /* ControllerDataSource.h */,
+				8E15A7342242371200553059 /* ControllerProtocol.h */,
+				8E15A7332242371200553059 /* ControllerView.h */,
+				8E15A7352242371200553059 /* ControllerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E15A7552242394200553059 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7562242394200553059 /* TestInteractor.h */,
+				8E15A7572242394200553059 /* TestInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8E15A7582242394200553059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7592242394200553059 /* TestView.h */,
+				8E15A75A2242394200553059 /* TestProtocol.h */,
+				8E15A75B2242394200553059 /* TestEventHandler.h */,
+				8E15A75C2242394200553059 /* TestView.m */,
+				8E15A75D2242394200553059 /* TestDataSource.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E15A75E2242394300553059 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A75F2242394300553059 /* TestPresenter.m */,
+				8E15A7602242394300553059 /* TestPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8E15A7612242394300553059 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7622242394300553059 /* TestRouter.h */,
+				8E15A7632242394300553059 /* TestRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8E7A7E8A224230F700CF3A76 /* SHViper */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A7E8B224230F700CF3A76 /* SHViperBlockDef.h */,
+				8E7A7E8C224230F700CF3A76 /* NSAssistant.h */,
+				8E7A7E8D224230F700CF3A76 /* SHDataService.h */,
+				8E7A7E8E224230F700CF3A76 /* BlockMacroDefines.h */,
+				8E7A7E8F224230F700CF3A76 /* SHDataService.m */,
+				8E7A7E90224230F700CF3A76 /* NSAssistant.m */,
+				8E7A7E91224230F700CF3A76 /* SHViperViewEventHandler.h */,
+			);
+			path = SHViper;
+			sourceTree = "<group>";
+		};
+		8E7A7E94224233D800CF3A76 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0698F0D820C8DE9E00F6E2F3 /* AppDelegate.h */,
+				0698F0D920C8DE9E00F6E2F3 /* AppDelegate.m */,
+				0698F0E120C8DEA000F6E2F3 /* Assets.xcassets */,
+				0698F0E320C8DEA000F6E2F3 /* LaunchScreen.storyboard */,
+				0698F0E720C8DEA000F6E2F3 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8E7A7EE42242368400CF3A76 /* ControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7272242371200553059 /* Interactor */,
+				8E15A72A2242371200553059 /* Presenter */,
+				8E15A72D2242371200553059 /* Router */,
+				8E15A7302242371200553059 /* View */,
+			);
+			path = ControllerTest;
+			sourceTree = "<group>";
+		};
+		8E7A7EE52242368F00CF3A76 /* ViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				8E15A7552242394200553059 /* Interactor */,
+				8E15A75E2242394300553059 /* Presenter */,
+				8E15A7612242394300553059 /* Router */,
+				8E15A7582242394200553059 /* View */,
+			);
+			path = ViewTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,8 +346,6 @@
 				0698F0D120C8DE9E00F6E2F3 /* Sources */,
 				0698F0D220C8DE9E00F6E2F3 /* Frameworks */,
 				0698F0D320C8DE9E00F6E2F3 /* Resources */,
-				E756566983C055C734C62E42 /* [CP] Embed Pods Frameworks */,
-				B0E1EED78E8EA3366594418A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -583,8 +441,6 @@
 			files = (
 				0698F0E520C8DEA000F6E2F3 /* LaunchScreen.storyboard in Resources */,
 				0698F0E220C8DEA000F6E2F3 /* Assets.xcassets in Resources */,
-				0698F0E020C8DE9E00F6E2F3 /* Main.storyboard in Resources */,
-				0698F1AF20C8DF2400F6E2F3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,21 +461,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0E1EED78E8EA3366594418A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CB8CF7992D8790B0458879FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,30 +479,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E756566983C055C734C62E42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHViperDemo/Pods-SHViperDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -669,29 +486,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0698F20F20C8FD7D00F6E2F3 /* SHRouter+User.m in Sources */,
-				0698F0DD20C8DE9E00F6E2F3 /* ViewController.m in Sources */,
-				0698F21020C8FD7D00F6E2F3 /* UserWireframe.m in Sources */,
-				0698F1AE20C8DF2400F6E2F3 /* SHDataService.m in Sources */,
-				0698F1DF20C8FD1200F6E2F3 /* ViperTestViewController.m in Sources */,
-				0698F1E120C8FD1200F6E2F3 /* SHDataService+ViperTest.m in Sources */,
-				0698F21820C8FD9F00F6E2F3 /* UserInfoModel.m in Sources */,
-				0698F1AD20C8DF2400F6E2F3 /* SHRouter.m in Sources */,
-				0698F21320C8FD7D00F6E2F3 /* SHDataService+User.m in Sources */,
-				0698F1E020C8FD1200F6E2F3 /* ViperTestViewPresenter.m in Sources */,
-				0698F20E20C8FD7D00F6E2F3 /* UserViewController.m in Sources */,
-				0698F1AC20C8DF2400F6E2F3 /* UIViewController+SHViperRouter.m in Sources */,
-				0698F1DC20C8FD1200F6E2F3 /* SHRouter+ViperTest.m in Sources */,
+				8E15A7362242371200553059 /* ControllerInteractor.m in Sources */,
+				8E15A7382242371200553059 /* ControllerRouter.m in Sources */,
+				8E15A7642242394300553059 /* TestInteractor.m in Sources */,
+				8E7A7E92224230F700CF3A76 /* SHDataService.m in Sources */,
+				8E15A7672242394300553059 /* TestRouter.m in Sources */,
 				0698F0E820C8DEA000F6E2F3 /* main.m in Sources */,
-				0698F1AB20C8DF2400F6E2F3 /* NSObject+SHViperAssembly.m in Sources */,
-				0698F1DD20C8FD1200F6E2F3 /* ViperTestWireframe.m in Sources */,
+				8E15A7372242371200553059 /* ControllerPresenter.m in Sources */,
+				8E15A7652242394300553059 /* TestView.m in Sources */,
+				8E15A7392242371200553059 /* ControllerView.m in Sources */,
 				0698F21D20C8FE6100F6E2F3 /* LumberJackFormatter.m in Sources */,
-				0698F21120C8FD7D00F6E2F3 /* UserBuilder.m in Sources */,
-				0698F1E220C8FD1200F6E2F3 /* ViperTestInteractor.m in Sources */,
-				0698F1DE20C8FD1200F6E2F3 /* ViperTestBuilder.m in Sources */,
 				0698F0DA20C8DE9E00F6E2F3 /* AppDelegate.m in Sources */,
-				0698F21220C8FD7D00F6E2F3 /* UserViewPresenter.m in Sources */,
-				0698F21420C8FD7D00F6E2F3 /* UserInteractor.m in Sources */,
+				8E15A7662242394300553059 /* TestPresenter.m in Sources */,
+				8E7A7E93224230F700CF3A76 /* NSAssistant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,14 +534,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0698F0DE20C8DE9E00F6E2F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0698F0DF20C8DE9E00F6E2F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0698F0E320C8DEA000F6E2F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -797,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -849,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -858,7 +657,7 @@
 		};
 		0698F10220C8DEA000F6E2F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8BABD399A220C7159A4DC43 /* Pods-SHViperDemo.debug.xcconfig */;
+			baseConfigurationReference = 786C4AA4ACC32374BDCD547A /* Pods-SHViperDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -879,7 +678,7 @@
 		};
 		0698F10320C8DEA000F6E2F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A29809266778201F18CD7608 /* Pods-SHViperDemo.release.xcconfig */;
+			baseConfigurationReference = 0906FA65633D2CFA80ED0A85 /* Pods-SHViperDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

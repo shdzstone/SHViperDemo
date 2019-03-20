@@ -1,14 +1,13 @@
 //
 //  SHViperViewEventHandler.h
-//  SHViper
+//  SHDemo
 //
-//  Created by zuik on 2017/5/24.
-//  Copyright © 2017 zuik. All rights reserved.
+//  Created by cdz on 2018/6/12.
+//  Copyright © 2018年 cdz's mac. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-///Handle event from SHViperView
+#ifndef SHViperViewEventHandler_h
+#define SHViperViewEventHandler_h
 @protocol SHViperViewEventHandler <NSObject>
 
 @optional
@@ -20,3 +19,4 @@
 - (void)handleViewDidDisappear:(BOOL)animated;
 
 @end
+#endif /* SHViperViewEventHandler_h */

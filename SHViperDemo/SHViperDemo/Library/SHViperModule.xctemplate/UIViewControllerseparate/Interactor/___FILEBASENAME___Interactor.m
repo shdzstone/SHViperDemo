@@ -3,30 +3,26 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
+//  ___COPYRIGHT___
 
 #import "___VARIABLE_productName___Interactor.h"
-#import "SHViperInteractorPrivate.h"
-#import "___VARIABLE_productName___DataService.h"
 
-@interface ___VARIABLE_productName___Interactor () <SHViperInteractorPrivate>
-@property (nonatomic, weak) id<___VARIABLE_productName___DataService> dataService;
+@interface ___VARIABLE_productName___Interactor ()
 
 @end
 
 @implementation ___VARIABLE_productName___Interactor
 
-//input
-- (void)loadDataWithCompletion:(successHandler)completion failure:(failureHandler)failure {
-    [self.dataService dataWithCompletion:^(id _Nonnull dataInfo) {
-        if (completion) {
-            completion(dataInfo);
-        }
-    } failure:^(NSError *_Nonnull error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+- (instancetype)init {
+    if (self = [super init]) {
+        
+    }
+    return self;
 }
+
+#pragma mark - network/entity handler
+
+#pragma mark - getters/setters
+
+
 @end

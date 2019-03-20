@@ -1,8 +1,8 @@
 //
 //  SHDataService.m
-//  Bee
+//  RushRabbit
 //
-//  Created by cdz on 2018/5/11.
+//  Created by cdz on 2018/6/7.
 //  Copyright © 2018年 cdz's mac. All rights reserved.
 //
 
@@ -10,12 +10,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-@interface SHDataService()
-
-@end
-
 @implementation SHDataService
-@synthesize sharedHTTPManager=_sharedHTTPManager;
+@synthesize httpManager=_httpManager;
 
 + (instancetype)sharedInsatnce {
     static SHDataService *shared;
@@ -26,47 +22,67 @@
     return shared;
 }
 
-- (AFHTTPSessionManager*)sharedHTTPManager {
-    if (_sharedHTTPManager==nil) {
+- (AFHTTPSessionManager*)httpManager {
+    if (_httpManager==nil) {
         // 初始化请求管理类
-        _sharedHTTPManager = [AFHTTPSessionManager manager];
-        _sharedHTTPManager.requestSerializer = [AFJSONRequestSerializer serializer];
+        _httpManager = [AFHTTPSessionManager manager];
+        _httpManager.requestSerializer = [AFJSONRequestSerializer serializer];
         
         // 设置15秒超时 - 取消请求
-        _sharedHTTPManager.requestSerializer.timeoutInterval = 15.0;
+        _httpManager.requestSerializer.timeoutInterval = 15.0;
         // 编码
-        _sharedHTTPManager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
+        _httpManager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
         // 缓存策略
-        _sharedHTTPManager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+        _httpManager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
         
-        _sharedHTTPManager.responseSerializer = [AFJSONResponseSerializer serializer];
+        _httpManager.responseSerializer = [AFJSONResponseSerializer serializer];
         // 支持内容格式
-        _sharedHTTPManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json", @"text/html", nil];
+        _httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json", @"text/html", nil];
     }
     
-    return _sharedHTTPManager;
+    return _httpManager;
 }
 
-
-
-#pragma makr - 文档操作
-
-+ (NSString *)_pathForLocalData {
-    __weak NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    __weak NSString *path = [document stringByAppendingPathComponent:@"core"];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSError *error;
-        [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-        NSAssert(error == nil, nil);
-    });
-    return path;
++ (NSError*)localErrorWithAFNError:(NSError*)error statusCode:(NSInteger)statusCode {
+    
+    if (error.userInfo[NSLocalizedDescriptionKey]!=nil) {
+        return error;
+    }else {
+        DDLogVerbose(@"statusCode:%ld",(long)statusCode);
+        NSMutableDictionary *userinfo = [NSMutableDictionary dictionary];
+        NSError *userInfoError = (NSError *)[error.userInfo objectForKey:NSUnderlyingErrorKey];
+        if (userInfoError) {
+            if ([userInfoError.userInfo objectForKey:NSLocalizedDescriptionKey]) {
+                [userinfo setObject:[userInfoError.userInfo objectForKey:NSLocalizedDescriptionKey] forKey:NSLocalizedDescriptionKey];
+            }else {
+                [userinfo setObject:@"网络发生异常" forKey:NSLocalizedDescriptionKey];
+            }
+            DDLogVerbose(@"errorResponse:%@",[userInfoError.userInfo objectForKey:@"com.alamofire.serialization.response.error.response"]);
+        }else {
+            [userinfo setObject:@"网络发生异常" forKey:NSLocalizedDescriptionKey];
+        }
+        return [NSError errorWithDomain:error.domain code:error.code userInfo:userinfo];
+    }
 }
 
-+ (NSString *)_pathForLocalDataWithFileName:(NSString *)fileName {
-    NSParameterAssert(fileName);
-    return [[self _pathForLocalData] stringByAppendingPathComponent:fileName];
++ (void)respData:(id)responseObject success:(successHandler)success failure:(failureHandler)failure {
+    NSDictionary *result = [(NSDictionary*)responseObject objectForKey:@"result"];
+    if ([[result objectForKey:@"success"] boolValue]) {
+        NSDictionary *dataInfo = [(NSDictionary*)responseObject objectForKey:@"content"];
+        if(success){
+            success(dataInfo);
+        }
+    }else {
+        if ([result[@"errorCode"] integerValue]==409) {
+            [SHDataService logout];
+        }else {
+            NSString *errorMsg = [NSString stringWithFormat:@"%@",result[@"errorMsg"]];
+            NSError *error = [NSError errorWithDomain:@"Args error" code:[result[@"errorCode"] integerValue] userInfo:@{NSLocalizedDescriptionKey:errorMsg}];
+            if(failure) {
+                failure(error);
+            }
+        }
+    }
 }
 
 @end
-

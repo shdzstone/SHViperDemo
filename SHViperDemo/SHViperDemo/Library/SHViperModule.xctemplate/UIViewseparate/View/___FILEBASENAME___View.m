@@ -3,44 +3,43 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
+//  ___COPYRIGHT___
 
 #import "___VARIABLE_productName___View.h"
-#import "SHViperViewPrivate.h"
-#import "___VARIABLE_productName___ViewEventHandler.h"
-#import "___VARIABLE_productName___ViewDataSource.h"
+#import "___VARIABLE_productName___Presenter.h"
+#import "___VARIABLE_productName___Router.h"
 
-@interface ___VARIABLE_productName___View () <SHViperViewPrivate>
-@property (nonatomic, strong) id<___VARIABLE_productName___ViewEventHandler> eventHandler;
-@property (nonatomic, strong) id<___VARIABLE_productName___ViewDataSource> viewDataSource;
-@property (nonatomic, weak, nullable) UIViewController *routeSource;
+@interface ___VARIABLE_productName___View ()
+@property (nonatomic, strong) ___VARIABLE_productName___Presenter *presenter;
 @property (nonatomic, assign) BOOL ready;
+//
 @end
 
 @implementation ___VARIABLE_productName___View
+@synthesize routeSource=_routeSource;
 
+#pragma mark - life cycle
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
+#pragma mark - viper
+- (void)bindPresenter:(id)presenter {
+    self.presenter = presenter;
 }
 
 - (void)sendViewReadyEventIfNeed {
     if (self.ready == NO &&
-        self.eventHandler != nil) {
+        self.presenter != nil) {
         self.ready = YES;
-        NSAssert([self.eventHandler conformsToProtocol:@protocol(___VARIABLE_productName___ViewEventHandler)], nil);
-        if ([self.eventHandler respondsToSelector:@selector(handleViewReady)]) {
-            [self.eventHandler handleViewReady];
+        NSAssert([self.presenter conformsToProtocol:@protocol(___VARIABLE_productName___EventHandler)], nil);
+        if ([self.presenter respondsToSelector:@selector(handleViewReady)]) {
+            [self.presenter handleViewReady];
         }
     }
+    [self addSubviews];
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
@@ -53,8 +52,8 @@
 - (void)didMoveToSuperview {
     [super didMoveToSuperview];
     if (self.superview == nil) {
-        if ([self.eventHandler respondsToSelector:@selector(handleViewRemoved)]) {
-            [self.eventHandler handleViewRemoved];
+        if ([self.presenter respondsToSelector:@selector(handleViewRemoved)]) {
+            [self.presenter handleViewRemoved];
         }
         self.ready = NO;
     }
@@ -64,13 +63,13 @@
     [super willMoveToWindow:newWindow];
     if (newWindow != nil) {
         [self sendViewReadyEventIfNeed];
-        if ([self.eventHandler respondsToSelector:@selector(handleViewWillAppear:)]) {
-            [self.eventHandler handleViewWillAppear:NO];
+        if ([self.presenter respondsToSelector:@selector(handleViewWillAppear:)]) {
+            [self.presenter handleViewWillAppear:NO];
         };
         return;
     }
-    if ([self.eventHandler respondsToSelector:@selector(handleViewWillDisappear:)]) {
-        [self.eventHandler handleViewWillDisappear:NO];
+    if ([self.presenter respondsToSelector:@selector(handleViewWillDisappear:)]) {
+        [self.presenter handleViewWillDisappear:NO];
     }
 }
 
@@ -78,14 +77,26 @@
     [super didMoveToWindow];
     if (self.window != nil) {
         [self sendViewReadyEventIfNeed];
-        if ([self.eventHandler respondsToSelector:@selector(handleViewDidAppear:)]) {
-            [self.eventHandler handleViewDidAppear:NO];
+        if ([self.presenter respondsToSelector:@selector(handleViewDidAppear:)]) {
+            [self.presenter handleViewDidAppear:NO];
         }
         return;
     }
-    if ([self.eventHandler respondsToSelector:@selector(handleViewDidDisappear:)]) {
-        [self.eventHandler handleViewDidDisappear:NO];
+    if ([self.presenter respondsToSelector:@selector(handleViewDidDisappear:)]) {
+        [self.presenter handleViewDidDisappear:NO];
     }
 }
+
+#pragma mark - layout
+- (void)addSubviews {
+
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+}
+
+#pragma mark - getters/setters
 
 @end
